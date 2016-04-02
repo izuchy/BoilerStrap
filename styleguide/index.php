@@ -36,35 +36,19 @@
 <!--/.sg-header-->
 
 <div class="sg-body sg-container container">
-    <div class="row">
-        <h1 class="page-header">Style Guide Documentation</h1>
-        <?php showDocs(); ?>
-    </div>
-    <!--/.row-->
-    <div class="row">
-        <h1 class="page-header">Foundation</h1>
-        <?php showFoundation(); ?>
-    </div>
-    <!--/.row-->
-
-    <div class="row sg-base-styles">
-        <h1 class="page-header">Example</h1>
-        <?php showMarkup('example'); ?>
-    </div><!--/.sg-base-styles-->
-
-    <div class="row sg-base-styles">
-        <h1 class="page-header">Base Styles</h1>
-        <?php showMarkup('base'); ?>
-    </div><!--/.sg-base-styles-->
-    <div class="sg-pattern-styles">
-        <h1 class="page-header">Patterns
-            <small> - Design and mark-up patterns unique to your site.</small>
-        </h1>
-        <?php showMarkup('patterns'); ?>
-    </div>
-    <!--/.sg-pattern-styles-->
+    <h1 class="page-header">Style Guide Documentation</h1>
+    <?php showDocs(); ?>
+    <h1 class="page-header">Foundation</h1>
+    <?php showFoundation(); ?>
+    <h1 class="page-header">Example</h1>
+    <?php showMarkup('example'); ?>
+    <h1 class="page-header">Base Styles</h1>
+    <?php showMarkup('base'); ?>
+    <h1 class="page-header">Patterns
+        <small> - Design and mark-up patterns unique to your site.</small>
+    </h1>
+    <?php showMarkup('patterns'); ?>
 </div>
-<!--/.sg-body-->
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="js/scrollspy.js"></script>
 <script src="js/dropdown.js"></script>
