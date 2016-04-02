@@ -7,6 +7,9 @@ $(document).ready(function () {
 });
 
 window.onload = function(){
-    if(typeof Clipboard === undefined)return;
-    var clipboard = new Clipboard('.sg-btn--select');
+    try{
+        var clipboard = new Clipboard('.sg-btn--select');
+    }catch(e){
+        console.log(e);
+    }
 };
