@@ -1,5 +1,5 @@
 <?php include_once('functions.php'); ?>
-<?php $project_name = "Project"; ?>
+<?php $project_name = "BoilerStrap"; ?>
 <!DOCTYPE html>
 
 <head>
