@@ -12,8 +12,6 @@
     "browser-sync": "^2.11.2",
     "gulp": "^3.9.1",
     "gulp-connect-php": "0.0.7",
-    "gulp-sass": "^2.2.0",
-    "gulp-webserver": "^0.9.1",
-    "sc5-styleguide": "^0.3.45"
+    "gulp-sass": "^2.2.0"
   }
 }
