@@ -1,0 +1,19 @@
+{
+  "name": "boiler_strap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.11.2",
+    "gulp": "^3.9.1",
+    "gulp-connect-php": "0.0.7",
+    "gulp-sass": "^2.2.0",
+    "gulp-webserver": "^0.9.1",
+    "sc5-styleguide": "^0.3.45"
+  }
+}

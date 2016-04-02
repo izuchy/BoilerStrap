@@ -1,0 +1,21 @@
+{
+  "name": "BoilerStrap",
+  "authors": [
+    "Takahiro Izuchi <izuchi@impath.jp>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6"
+  }
+}
