@@ -98,6 +98,7 @@ echo '<li role="presentation" class="divider"></li><li role="presentation" class
         endif;
     endwhile;
 
+    $code_cnt = 1;
     sort($files);
     foreach ($files as $file):
         $filename = preg_replace("/\.html$/i", "", $file);
@@ -118,15 +119,19 @@ echo '<li role="presentation" class="divider"></li><li role="presentation" class
           echo '</div></div></div>';
         }
         echo '</div><!--/.sg-display-->';
-        echo '<div class="sg-markup-controls"><a class="btn btn-primary sg-btn sg-btn--source" href="#">View Source</a> <a class="sg-btn--top" href="#top">Back to Top</a> </div>';
+        echo '<div class="sg-markup-controls"><button class="btn btn-primary sg-btn sg-btn--source" href="#">View Source</button> <a class="sg-btn--top" href="#top">Back to Top</a> </div>';
         echo '<div class="sg-source sg-animated">';
-        echo '<a class="btn btn-default sg-btn sg-btn--select" href="#">Copy Source</a>';
-        echo '<pre class="prettyprint linenums"><code>';
+        echo '<button class="btn btn-default sg-btn sg-btn--select" href="#" data-clipboard-target="#code'.$code_cnt.'">Copy Source</button>';
+        echo '<pre class="prettyprint linenums" id="code'.$code_cnt.'"><code>';
         echo htmlspecialchars(file_get_contents('markup/'.$type.'/'.$file));
         echo '</code></pre>';
+        echo '<code style="display:none">';
+        echo htmlspecialchars(file_get_contents('markup/'.$type.'/'.$file));
+        echo '</code>';
         echo '</div><!--/.sg-source-->';
         //echo '</div><!--/.colmd10-->';
         echo '</div><!--/.sg-section-->';
+        $code_cnt++;
     endforeach;
   }
 ?>

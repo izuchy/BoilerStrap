@@ -9,6 +9,14 @@
     <!-- Style Guide Boilerplate Styles -->
     <link rel="stylesheet" href="css/styleguide.css">
     <link rel="stylesheet" href="css/customize-strap.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.3/clipboard.min.js"></script>
 </head>
 <body data-spy="scroll" data-target=".navbar-default" data-offset="60">
 <!-- Fixed navbar -->
@@ -50,9 +58,8 @@
     <?php showMarkup('patterns'); ?>
 </div>
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="js/scrollspy.js"></script>
-<script src="js/dropdown.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script src="js/sg-plugins.js"></script>
-<script src="js/sg-scripts.js"></script>
+<script src="js/sg.js"></script>
 </body>
 </html>
