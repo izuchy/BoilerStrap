@@ -5,11 +5,11 @@ var browserSync = require('browser-sync');
 
 gulp.task('connect-sync', function() {
     connect.server({
-        port:3000,
+        port:8000,
         base:'styleguide'
     }, function (){
         browserSync({
-            proxy: 'localhost:3000'
+            proxy: 'localhost:8000'
         });
     });
 });
@@ -18,9 +18,9 @@ gulp.task('reload', function(){
     browserSync.reload();
 });
 
-gulp.task("default",['connect-sync'], function() {
+gulp.task("default",['sass','connect-sync'], function() {
     gulp.watch("sass/**/*.scss",["sass"]);
-    gulp.watch("./styleguide/**/*.php",["reload"]);
+    gulp.watch("styleguide/**/*.php",["reload"]);
 });
 
 gulp.task('sass', function () {
@@ -28,5 +28,6 @@ gulp.task('sass', function () {
         .pipe(sass({
             style : 'expanded'
         }))
+        .pipe(gulp.dest('css/'))
         .pipe(gulp.dest('styleguide/css/'));
 });
