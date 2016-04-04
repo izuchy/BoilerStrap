@@ -103,20 +103,20 @@ echo '<li role="presentation" class="divider"></li><li role="presentation" class
     foreach ($files as $file):
         $filename = preg_replace("/\.html$/i", "", $file);
         $title = preg_replace("/\-/i", " ", $filename);
-        $documentation = 'usage/'.$type.'/'.$file;
+        //$documentation = 'usage/'.$type.'/'.$file;
         echo '<div class="sg-markup sg-section">';
         echo '<div class="sg-display">';
         echo '<h2 class="sg-h2"><a id="sg-'.$filename.'" class="sg-anchor">'.$title.'</a></h2>';
         //echo '<div class="col-md-10 col-md-offset-1">';
-        echo '<div class="row"><div class="col-md-8">';
+        echo '<div class="row"><div class="col-md-12">';
         include('markup/'.$type.'/'.$file);
         echo '</div>';
-         if (file_exists($documentation)) {
-          echo '<div class="col-md-4"><div class="well sg-doc">';
-          echo '<h3 class="sg-h3">Usage Notes</h3>';
-          include($documentation);
-          echo '</div></div></div>';
-        }
+        //if (file_exists($documentation)) {
+        //  echo '<div class="col-md-4"><div class="well sg-doc">';
+        //  echo '<h3 class="sg-h3">Usage Notes</h3>';
+        //  include($documentation);
+        //  echo '</div></div></div>';
+        //}
         echo '</div><!--/.sg-display-->';
         echo '<div class="sg-markup-controls"><button class="btn sg-btn sg-btn--source" href="#">View Source</button> <a class="sg-btn--top" href="#top">Back to Top</a> </div>';
         echo '<div class="sg-source sg-animated">';
