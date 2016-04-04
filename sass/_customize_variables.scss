@@ -18,7 +18,7 @@ $border-radius-large:       4px !default;
 $border-radius-small:       1px !default;
 
 //フォント設定
-$font-family-sans-serif:  "游明朝", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", "ＭＳ 明朝", serif!default;
-$font-family-serif:       "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "ＭＳ ゴシック", sans-serif!default;
+$font-family-sans-serif:  "Roboto Slab" , Garamond , "Times New Roman" , "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif!default;
+$font-family-serif:       Avenir , "Open Sans" , "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif!default;
 $font-family-base:        $font-family-serif !default;
-$line-height-base:        1.58333 !default; //モリサワのサイトを参考にした
+$line-height-base:        1.4142 !default;
