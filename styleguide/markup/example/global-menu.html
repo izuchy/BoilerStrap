@@ -1,19 +1,10 @@
 <section class="main">
     <div class="global-side-menu">
         <ul class="side-menu-list">
-            <li class="side-menu-item"><a href="#"><i class="item-icon fa fa-bell"></i> Profile</a></li>
-            <li class="side-menu-item"><a href="#"><i class="item-icon fa fa-bell"></i> Profile</a></li>
-            <li class="side-menu-item"><a href="#"><i class="item-icon fa fa-bell"></i> Profile</a></li>
-            <li class="side-menu-item"><a href="#"><i class="item-icon fa fa-bell"></i> Profile</a></li>
-
-            <div class="collapse" id="collapseExample">
-                <div class="well">
-                    ...
-                </div>
-            </div>
-            <li class="side-menu-item"><a href="#"><i class="item-icon fa fa-bell"></i> Profile</a></li>
-            <li class="side-menu-item active"><a href="#"><i class="item-icon fa fa-bell"></i> Profile</a></li>
-            <li class="side-menu-item"><a href="#"><i class="item-icon fa fa-bell"></i> Profile</a></li>
+            <li class="side-menu-item"><a href="#"><i class="item-icon fa fa-home"></i> ホーム</a></li>
+            <li class="side-menu-item"><a href="#"><i class="item-icon fa fa-feed"></i> フィード</a></li>
+            <li class="side-menu-item"><a href="#"><i class="item-icon fa fa-calendar"></i> カレンダー</a></li>
+            <li class="side-menu-item"><a href="#"><i class="item-icon fa fa-gear"></i> サイト設定</a></li>
         </ul>
     </div>
     <div class="main-content">
@@ -42,25 +33,93 @@
                 </div>
             </div>
         </div>
+        <div class="main-top-content">
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#all" aria-controls="all" role="tab"
+                                                          data-toggle="tab">全社</a></li>
+                <li role="presentation"><a href="#division" aria-controls="division" role="tab" data-toggle="tab">◯◯事業部</a>
+                </li>
+                <li role="presentation"><a href="#group" aria-controls="group" role="tab"
+                                           data-toggle="tab">◯◯グループ</a></li>
+            </ul>
+        </div>
         <div class="main-body-content">
             <div class="row">
                 <div class="col-md-8 separate-border">
                     <div class="main-body">
-                        <h2>あのイーハトーヴォのすきとおった風</h2>
-                        <p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
-                        <p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
-                        <p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
-                        <p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
-                        <p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
-                        <p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
-                        <p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
-                        <p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
-                        <p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="all">
+
+                                <button class="btn btn-primary post-article" type="button" data-toggle="collapse" data-target="#post-article" aria-expanded="true" aria-controls="post-article">
+                                    お知らせを追加
+                                </button>
+                                <div class="collapse" id="post-article" data-parent=".post-article" data-cancel=".post-article-cancel">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <div class="form-group">
+                                                <label for="post_title">タイトル</label>
+                                                <input id="post_title" name="post_title" class="form-control" type="text">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="post_body">本文</label>
+                                                <textarea id="post_body" name="post_body" class="form-control"></textarea>
+                                            </div>
+                                            <div class="text-right">
+                                                <button class="btn btn-default post-article-cancel">キャンセル</button>
+                                                <button class="btn btn-primary">保存</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-primary post-schedule" type="button" data-toggle="collapse" data-target="#post-schedule" aria-expanded="true" aria-controls="post-schedule">
+                                    スケジュールを追加
+                                </button>
+                                <div class="collapse" id="post-schedule" data-parent=".post-schedule" data-cancel=".post-schedule-cancel" data-cancel-toggle="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <div class="form-group">
+                                                <label for="post_schedule_title">タイトル</label>
+                                                <input id="post_schedule_title" name="post_schedule_title" class="form-control" type="text">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="post_schedule_body">本文</label>
+                                                <textarea id="post_schedule_body" name="post_schedule_body" class="form-control"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="post_schedule_date">日時</label>
+                                                <textarea id="post_schedule_date" name="post_schedule_date" class="form-control"></textarea>
+                                            </div>
+                                            <div class="text-right">
+                                                <button class="btn btn-default post-schedule-cancel">キャンセル</button>
+                                                <button class="btn btn-primary">保存</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                <h3 class="page-header">あのイーハトーヴォのすきとおった風</h3>
+                                    <p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
+                                    <p>またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、羊飼のミーロや、顔の赤いこどもたち、地主のテーモ、山猫博士のボーガント・デストゥパーゴなど、いまこの暗い巨きな石の建物のなかで考えていると、みんなむかし風のなつかしい青い幻燈のように思われます。では、わたくしはいつかの小さなみだしをつけながら、しずかにあの年のイーハトーヴォの五月から十月までを書きつけましょう。</p>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="division">
+                                <h3 class="page-header">夏でも底に冷たさをもつ青いそら</h3>
+                                <p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
+                                <p>五月のしまいの日曜でした。わたくしは賑にぎやかな市の教会の鐘の音で眼をさましました。もう日はよほど登って、まわりはみんなきらきらしていました。時計を見るとちょうど六時でした。わたくしはすぐチョッキだけ着て山羊を見に行きました。すると小屋のなかはしんとして藁わらが凹んでいるだけで、あのみじかい角も白い髯も見えませんでした。</p>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="group">
+                                <h2 class="page-header">うつくしい森で飾られたモリーオ市</h2>
+                                <p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
+                                <p>「あんまりいい天気なもんだから大将ひとりででかけたな。」<br>わたくしは半分わらうように半分つぶやくようにしながら、向うの信号所からいつも放して遊ばせる輪道の内側の野原、ポプラの中から顔をだしている市はずれの白い教会の塔までぐるっと見まわしました。</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="sub-body">
-                        <h3>あのイーハトーヴォのすきとおった風</h3>
+                        <h4 class="page-header">あのイーハトーヴォのすきとおった風</h4>
                         <p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
                         <p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
                         <p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>

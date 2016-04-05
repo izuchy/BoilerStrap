@@ -35,6 +35,15 @@ $global-side-menu-item-icon-size: $global-side-menu-item-height - $global-side-m
         text-decoration: none;
         color: #fff;
         font-size: 18px;
+        &:hover{
+          opacity: .4;
+          @include transition(all 0.2s ease-in-out);
+        }
+      }
+      .badge{
+        float: right;
+        display:table-cell;
+        vertical-align: middle;
       }
       .item-icon{
         font-size: 24px;
@@ -44,7 +53,7 @@ $global-side-menu-item-icon-size: $global-side-menu-item-height - $global-side-m
         width: $global-side-menu-item-icon-size;
         height: $global-side-menu-item-icon-size;
         margin-left: $global-side-menu-item-padding;
-        padding-top: $global-side-menu-item-padding;
+        padding-top: $global-side-menu-item-padding * 2 - 1px;
         text-align: center;
       }
     }
@@ -79,12 +88,39 @@ $global-logo-padding-left: 26px;
 //content
 $main-body-content-padding: 16px;
 $main-body-separate-boder: $gray-lighter;
+$main-top-content-bg: $gray-lighter;
+$main-top-content-margin-top: 16px;
+$main-top-content-nav-item-border: $brand-primary;
 .main-content{
   margin-left: $global-side-menu-width;
+  .main-top-content{
+    background-color: $main-top-content-bg;
+    padding-top: $main-top-content-margin-top;
+    .nav-tabs{
+      > li{
+        margin-bottom: 0;
+        a{
+          background: none;
+          border: none;
+          &:hover,&:active,&:focus{
+            background: none;
+            border: none;
+          }
+        }
+        &.active a{
+          border-bottom:4px solid $main-top-content-nav-item-border;
+        }
+      }
+    }
+  }
   .main-body-content{
     padding: $main-body-content-padding;
     .separate-border{
       border-right: 1px solid $main-body-separate-boder;
     }
+  }
+  .page-header{
+    margin-top: 0;
+    padding-top: 12px;
   }
 }

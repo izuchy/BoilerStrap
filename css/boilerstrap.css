@@ -27,6 +27,15 @@
         text-decoration: none;
         color: #fff;
         font-size: 18px; }
+        .global-side-menu .side-menu-list .side-menu-item a:hover {
+          opacity: .4;
+          -webkit-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out; }
+      .global-side-menu .side-menu-list .side-menu-item .badge {
+        float: right;
+        display: table-cell;
+        vertical-align: middle; }
       .global-side-menu .side-menu-list .side-menu-item .item-icon {
         font-size: 24px;
         background-color: #5880be;
@@ -35,7 +44,7 @@
         width: 36px;
         height: 36px;
         margin-left: 4px;
-        padding-top: 4px;
+        padding-top: 7px;
         text-align: center; }
 
 .global-top-menu {
@@ -57,10 +66,26 @@
 
 .main-content {
   margin-left: 200px; }
+  .main-content .main-top-content {
+    background-color: #eeeeee;
+    padding-top: 16px; }
+    .main-content .main-top-content .nav-tabs > li {
+      margin-bottom: 0; }
+      .main-content .main-top-content .nav-tabs > li a {
+        background: none;
+        border: none; }
+        .main-content .main-top-content .nav-tabs > li a:hover, .main-content .main-top-content .nav-tabs > li a:active, .main-content .main-top-content .nav-tabs > li a:focus {
+          background: none;
+          border: none; }
+      .main-content .main-top-content .nav-tabs > li.active a {
+        border-bottom: 4px solid #2f6d99; }
   .main-content .main-body-content {
     padding: 16px; }
     .main-content .main-body-content .separate-border {
       border-right: 1px solid #eeeeee; }
+  .main-content .page-header {
+    margin-top: 0;
+    padding-top: 12px; }
 
 /*!
  *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
