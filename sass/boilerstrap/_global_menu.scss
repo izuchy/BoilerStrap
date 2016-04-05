@@ -1,0 +1,13 @@
+$global-side-menu-bg: #2567BE;
+.global-side-menu {
+  background-color: $global-side-menu-bg;
+  width: 200px;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  position: absolute;
+}
+.main-content{
+  margin-left: 200px;
+  padding: 16px;
+}
