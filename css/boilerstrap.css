@@ -1,4 +1,67 @@
 @charset "UTF-8";
+.global-side-menu {
+  background-color: #2567BE;
+  width: 200px;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  position: absolute; }
+  .global-side-menu .side-menu-list {
+    padding: 8px;
+    width: 100%;
+    list-style-type: none; }
+    .global-side-menu .side-menu-list .side-menu-item {
+      background-color: #0f5488;
+      height: 44px;
+      vertical-align: middle;
+      display: table;
+      width: 100%;
+      margin-bottom: 8px;
+      border: 1px solid transparent;
+      border-radius: 2px; }
+      .global-side-menu .side-menu-list .side-menu-item a {
+        display: table-cell;
+        height: 44px;
+        width: inherit;
+        vertical-align: middle;
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px; }
+      .global-side-menu .side-menu-list .side-menu-item .item-icon {
+        font-size: 24px;
+        background-color: #5880be;
+        color: #fff;
+        border-radius: 2px;
+        width: 36px;
+        height: 36px;
+        margin-left: 4px;
+        padding-top: 4px;
+        text-align: center; }
+
+.global-top-menu {
+  padding: 5px;
+  min-height: 55px;
+  background-color: #fff;
+  width: 100%;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
+  .global-top-menu .logo {
+    padding-left: 26px; }
+  .global-top-menu .sub-menu .btn {
+    font-size: 24px;
+    border: none; }
+  .global-top-menu .center-menu {
+    padding-top: 6px; }
+    .global-top-menu .center-menu .input-group-addon {
+      background-color: #fff; }
+
+.main-content {
+  margin-left: 200px; }
+  .main-content .main-body-content {
+    padding: 16px; }
+    .main-content .main-body-content .separate-border {
+      border-right: 1px solid #eeeeee; }
+
 /*!
  *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2078,6 +2141,11 @@
 .fa-percent:before {
   content: ""; }
 
+/*!
+ * Bootstrap v3.3.6 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.

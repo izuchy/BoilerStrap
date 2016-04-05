@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width">
     <!-- Style Guide Boilerplate Styles -->
     <link rel="stylesheet" href="css/styleguide.css">
-    <link rel="stylesheet" href="css/customize-strap.css">
+    <link rel="stylesheet" href="css/boilerstrap.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

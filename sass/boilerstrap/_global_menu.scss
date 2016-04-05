@@ -1,13 +1,90 @@
+//side menu
 $global-side-menu-bg: #2567BE;
+$global-side-menu-item-bg: #0f5488;
+$global-side-menu-item-icon-bg: #5880be;
+$global-side-menu-width: 200px;
+$global-side-menu-item-border-radius: $border-radius-base !default;
+$global-side-menu-item-height: 44px;
+$global-side-menu-item-padding: 4px;
+$global-side-menu-item-icon-size: $global-side-menu-item-height - $global-side-menu-item-padding * 2;
 .global-side-menu {
   background-color: $global-side-menu-bg;
-  width: 200px;
+  width: $global-side-menu-width;
   min-height: 100%;
   height: auto !important;
   height: 100%;
   position: absolute;
+  .side-menu-list{
+    padding: 8px;
+    width: 100%;
+    list-style-type: none;
+    .side-menu-item{
+      background-color: $global-side-menu-item-bg;
+      height: $global-side-menu-item-height;
+      vertical-align: middle;
+      display: table;
+      width: 100%;
+      margin-bottom: 8px;
+      border: 1px solid transparent;
+      border-radius: $global-side-menu-item-border-radius;
+      a{
+        display:table-cell;
+        height: $global-side-menu-item-height;
+        width: inherit;
+        vertical-align: middle;
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+      }
+      .item-icon{
+        font-size: 24px;
+        background-color: $global-side-menu-item-icon-bg;
+        color: #fff;
+        border-radius: $global-side-menu-item-border-radius;
+        width: $global-side-menu-item-icon-size;
+        height: $global-side-menu-item-icon-size;
+        margin-left: $global-side-menu-item-padding;
+        padding-top: $global-side-menu-item-padding;
+        text-align: center;
+      }
+    }
+  }
 }
+
+//top menu
+$global-top-menu-bg: #fff;
+$global-top-height: 55px;
+$global-logo-padding-left: 26px;
+.global-top-menu {
+  padding: 5px;
+  min-height: $global-top-height;
+  background-color: $global-top-menu-bg;
+  width: 100%;
+  @include box-shadow(0 2px 4px rgba(0, 0, 0, .1));
+  .logo{
+    padding-left: $global-logo-padding-left;
+  }
+  .sub-menu .btn {
+    font-size: 24px;
+    border: none;
+  }
+  .center-menu{
+    padding-top: 6px;
+    .input-group-addon{
+      background-color: $global-top-menu-bg;
+    }
+  }
+}
+
+//content
+$main-body-content-padding: 16px;
+$main-body-separate-boder: $gray-lighter;
 .main-content{
-  margin-left: 200px;
-  padding: 16px;
+  margin-left: $global-side-menu-width;
+  .main-body-content{
+    padding: $main-body-content-padding;
+    .separate-border{
+      border-right: 1px solid $main-body-separate-boder;
+    }
+  }
 }
