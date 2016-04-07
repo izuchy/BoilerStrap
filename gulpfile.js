@@ -20,6 +20,7 @@ gulp.task('reload', function(){
 });
 
 gulp.task("default",['init','sass','connect-sync'], function() {
+    gulp.watch("styleguide/**/*.html",["cp_assets","php2html"]);
     gulp.watch("sass/**/*.scss",["sass","cp_assets","php2html"]);
     gulp.watch("js/**/*.js",["cp_assets","php2html"]);
     gulp.watch("styleguide/**/*.php",["reload","cp_assets","php2html"]);
