@@ -1,5 +1,7 @@
 bower_components
 node_modules
 .idea
-styleguide/css/boilerstrap.css
-styleguide/css/boilerstrap.all.css
+styleguide/css/
+styleguide/js/
+styleguide/fonts/
+styleguide/images/
