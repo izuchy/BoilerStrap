@@ -1,22 +1,27 @@
 @charset "UTF-8";
 .global-side-menu {
-  background-color: #241917;
-  width: 200px;
+  background-color: #525252;
+  width: 260px;
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  position: absolute; }
+  position: absolute;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  .global-side-menu .logo img {
+    margin: 16px 0 0 16px; }
   .global-side-menu .side-menu-list {
-    padding: 8px;
+    padding: 16px;
     width: 100%;
     list-style-type: none; }
     .global-side-menu .side-menu-list .side-menu-item {
-      background-color: #62443f;
+      background-color: #666666;
       height: 44px;
       vertical-align: middle;
       display: table;
       width: 100%;
-      margin-bottom: 8px;
+      margin-bottom: 12px;
       border: 1px solid transparent;
       border-radius: 2px; }
       .global-side-menu .side-menu-list .side-menu-item a {
@@ -38,8 +43,8 @@
         vertical-align: middle; }
       .global-side-menu .side-menu-list .side-menu-item .item-icon {
         font-size: 24px;
-        background-color: #eee6e5;
-        color: #241917;
+        background-color: #ebebeb;
+        color: #525252;
         border-radius: 2px;
         width: 36px;
         height: 36px;
@@ -52,11 +57,7 @@
   padding: 5px;
   min-height: 55px;
   background-color: #fff;
-  width: 100%;
-  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
-  .global-top-menu .logo {
-    padding-left: 26px; }
+  width: 100%; }
   .global-top-menu .sub-menu .btn {
     font-size: 24px;
     border: none; }
@@ -66,13 +67,15 @@
       background-color: #fff; }
 
 .main-content {
-  margin-left: 200px; }
+  margin-left: 260px; }
   .main-content .main-top-content {
     background-color: white;
     padding-top: 16px; }
     .main-content .main-top-content .nav-tabs > li {
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      min-width: 96px; }
       .main-content .main-top-content .nav-tabs > li a {
+        text-align: center;
         background: none;
         border: none; }
         .main-content .main-top-content .nav-tabs > li a:hover, .main-content .main-top-content .nav-tabs > li a:active, .main-content .main-top-content .nav-tabs > li a:focus {
@@ -87,6 +90,36 @@
   .main-content .page-header {
     margin-top: 0;
     padding-top: 12px; }
+  .main-content .navbar-toggle-button {
+    display: none; }
+
+@media (max-width: 767px) {
+  .main-top-content .nav-tabs li {
+    width: 100%; } }
+
+@media (max-width: 768px) {
+  .main-content .navbar-toggle-button {
+    display: inline-block;
+    font-size: 33px;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    background: #fafafa;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 4px; }
+  .global-side-menu {
+    min-width: 0;
+    width: 0;
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in; }
+  .main-content {
+    margin-left: 0;
+    -webkit-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out; } }
 
 /*!
  *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
