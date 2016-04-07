@@ -1,7 +1,9 @@
 //side menu
-$global-side-menu-bg: #2567BE;
-$global-side-menu-item-bg: #0f5488;
-$global-side-menu-item-icon-bg: #5880be;
+$global-side-menu-bg: #241917;
+$global-side-menu-item-bg: lighten($global-side-menu-bg,20%);
+$global-side-menu-item-icon-bg: lighten($global-side-menu-bg,80%);
+$global-side-menu-item-color: $global-side-menu-bg;
+$global-side-menu-item-link-color: #fff;
 $global-side-menu-width: 200px;
 $global-side-menu-item-border-radius: $border-radius-base !default;
 $global-side-menu-item-height: 44px;
@@ -33,8 +35,8 @@ $global-side-menu-item-icon-size: $global-side-menu-item-height - $global-side-m
         width: inherit;
         vertical-align: middle;
         text-decoration: none;
-        color: #fff;
         font-size: 18px;
+        color: $global-side-menu-item-link-color;
         &:hover{
           opacity: .4;
           @include transition(all 0.2s ease-in-out);
@@ -48,13 +50,14 @@ $global-side-menu-item-icon-size: $global-side-menu-item-height - $global-side-m
       .item-icon{
         font-size: 24px;
         background-color: $global-side-menu-item-icon-bg;
-        color: #fff;
+        color: $global-side-menu-item-color;
         border-radius: $global-side-menu-item-border-radius;
         width: $global-side-menu-item-icon-size;
         height: $global-side-menu-item-icon-size;
         margin-left: $global-side-menu-item-padding;
         padding-top: $global-side-menu-item-padding * 2 - 1px;
         text-align: center;
+        margin-right: 8px;
       }
     }
   }
@@ -88,7 +91,7 @@ $global-logo-padding-left: 26px;
 //content
 $main-body-content-padding: 16px;
 $main-body-separate-boder: $gray-lighter;
-$main-top-content-bg: $gray-lighter;
+$main-top-content-bg: lighten($global-side-menu-bg,90%);
 $main-top-content-margin-top: 16px;
 $main-top-content-nav-item-border: $brand-primary;
 .main-content{
