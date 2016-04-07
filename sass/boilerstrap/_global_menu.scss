@@ -1,14 +1,17 @@
 //side menu
-$global-side-menu-bg: #241917;
-$global-side-menu-item-bg: lighten($global-side-menu-bg,20%);
-$global-side-menu-item-icon-bg: lighten($global-side-menu-bg,80%);
+$global-side-menu-bg: #525252;
+$global-side-menu-item-bg: lighten($global-side-menu-bg,8%);
+$global-side-menu-item-icon-bg: lighten($global-side-menu-bg,60%);
 $global-side-menu-item-color: $global-side-menu-bg;
 $global-side-menu-item-link-color: #fff;
-$global-side-menu-width: 200px;
+$global-side-menu-width: 260px;
 $global-side-menu-item-border-radius: $border-radius-base !default;
 $global-side-menu-item-height: 44px;
 $global-side-menu-item-padding: 4px;
 $global-side-menu-item-icon-size: $global-side-menu-item-height - $global-side-menu-item-padding * 2;
+$global-side-menu-item-margin: 16px;
+$global-side-menu-item-margin-bottom: 12px;
+
 .global-side-menu {
   background-color: $global-side-menu-bg;
   width: $global-side-menu-width;
@@ -16,8 +19,14 @@ $global-side-menu-item-icon-size: $global-side-menu-item-height - $global-side-m
   height: auto !important;
   height: 100%;
   position: absolute;
+  @include transition(all 0.2s ease-in-out);
+  .logo{
+    img{
+      margin: $global-side-menu-item-margin 0 0 $global-side-menu-item-margin;
+    }
+  }
   .side-menu-list{
-    padding: 8px;
+    padding: $global-side-menu-item-margin;
     width: 100%;
     list-style-type: none;
     .side-menu-item{
@@ -26,7 +35,7 @@ $global-side-menu-item-icon-size: $global-side-menu-item-height - $global-side-m
       vertical-align: middle;
       display: table;
       width: 100%;
-      margin-bottom: 8px;
+      margin-bottom: $global-side-menu-item-margin-bottom;
       border: 1px solid transparent;
       border-radius: $global-side-menu-item-border-radius;
       a{
@@ -72,10 +81,7 @@ $global-logo-padding-left: 26px;
   min-height: $global-top-height;
   background-color: $global-top-menu-bg;
   width: 100%;
-  @include box-shadow(0 2px 4px rgba(0, 0, 0, .1));
-  .logo{
-    padding-left: $global-logo-padding-left;
-  }
+ // @include box-shadow(0 2px 4px rgba(0, 0, 0, .1));
   .sub-menu .btn {
     font-size: 24px;
     border: none;
@@ -102,7 +108,9 @@ $main-top-content-nav-item-border: $brand-primary;
     .nav-tabs{
       > li{
         margin-bottom: 0;
+        min-width: 96px;
         a{
+          text-align: center;
           background: none;
           border: none;
           &:hover,&:active,&:focus{
@@ -125,5 +133,44 @@ $main-top-content-nav-item-border: $brand-primary;
   .page-header{
     margin-top: 0;
     padding-top: 12px;
+  }
+  .navbar-toggle-button{
+    display: none;
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  .main-top-content {
+    .nav-tabs {
+      li {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: $grid-float-breakpoint) {
+  .main-content{
+    .navbar-toggle-button{
+      display: inline-block;
+      font-size: 33px;
+      cursor: pointer;
+      width: 44px;
+      height: 44px;
+      background: #fafafa;
+      text-align: center;
+      line-height: 44px;
+      border-radius: $border-radius-large;
+    }
+  }
+  .global-side-menu{
+    min-width: 0;
+    width: 0;
+    opacity: 0;
+    @include transition(all 0.2s ease-in);
+  }
+  .main-content{
+    margin-left: 0;
+    @include transition(all 0.4s ease-out);
   }
 }
