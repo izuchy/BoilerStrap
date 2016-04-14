@@ -42,9 +42,9 @@ gulp.task('cp_assets',['sass'], function () {
 });
 
 gulp.task('php2html',function(){
-    //gulp.src("styleguide/index.php")
-    //    .pipe(php2html())
-    //    .pipe(gulp.dest("./"));
+    gulp.src("styleguide/index.php")
+        .pipe(php2html())
+        .pipe(gulp.dest("./"));
 });
 
 gulp.task('init', function() {
