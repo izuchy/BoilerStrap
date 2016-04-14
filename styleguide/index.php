@@ -17,6 +17,7 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.3/clipboard.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 </head>
 <body data-spy="scroll" data-target=".navbar-default" data-offset="60">
 <!-- Fixed navbar -->
@@ -57,7 +58,6 @@
     </h1>
     <?php showMarkup('patterns'); ?>
 </div>
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/customize-strap.js"></script>
 <script src="js/sg-plugins.js"></script>

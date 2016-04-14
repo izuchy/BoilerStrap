@@ -1,16 +1,19 @@
 //side menu
 $global-side-menu-bg: #525252;
-$global-side-menu-item-bg: lighten($global-side-menu-bg,8%);
-$global-side-menu-item-icon-bg: lighten($global-side-menu-bg,60%);
+$global-side-menu-item-bg: lighten($global-side-menu-bg, 8%);
+$global-side-menu-item-child-bg:  lighten($global-side-menu-bg, 16%);
+$global-side-menu-item-icon-bg: lighten($global-side-menu-bg, 60%);
 $global-side-menu-item-color: $global-side-menu-bg;
 $global-side-menu-item-link-color: #fff;
 $global-side-menu-width: 260px;
 $global-side-menu-item-border-radius: $border-radius-base !default;
-$global-side-menu-item-height: 44px;
+$global-side-menu-item-height: 32px;
 $global-side-menu-item-padding: 4px;
-$global-side-menu-item-icon-size: $global-side-menu-item-height - $global-side-menu-item-padding * 2;
+$global-side-menu-item-icon-padding: 2px;
+$global-side-menu-item-min-icon-size: 30px;
 $global-side-menu-item-margin: 16px;
 $global-side-menu-item-margin-bottom: 12px;
+$global-side-menu-item-child-margin-left: 12px;
 
 .global-side-menu {
   background-color: $global-side-menu-bg;
@@ -19,17 +22,32 @@ $global-side-menu-item-margin-bottom: 12px;
   height: auto !important;
   height: 100%;
   position: absolute;
+  &.open {
+    min-width: $global-side-menu-width;
+    width: $global-side-menu-width;
+    opacity: 1;
+    z-index: 999;
+    display: block !important;
+    @include transition(all 0.2s ease-in-out);
+  }
+
   @include transition(all 0.2s ease-in-out);
-  .logo{
-    img{
+  .logo {
+    img {
       margin: $global-side-menu-item-margin 0 0 $global-side-menu-item-margin;
     }
+    h1.logo,h2.logo{
+      padding-left: $global-side-menu-item-margin;
+      color: #fff;
+      margin-bottom: 0;
+    }
   }
-  .side-menu-list{
+  .side-menu-list {
     padding: $global-side-menu-item-margin;
     width: 100%;
     list-style-type: none;
-    .side-menu-item{
+    .side-menu-item {
+      padding-top: $global-side-menu-item-padding;
       background-color: $global-side-menu-item-bg;
       height: $global-side-menu-item-height;
       vertical-align: middle;
@@ -38,37 +56,62 @@ $global-side-menu-item-margin-bottom: 12px;
       margin-bottom: $global-side-menu-item-margin-bottom;
       border: 1px solid transparent;
       border-radius: $global-side-menu-item-border-radius;
-      a{
-        display:table-cell;
+      cursor: pointer;
+      a {
+        display: table-cell;
         height: $global-side-menu-item-height;
         width: inherit;
         vertical-align: middle;
         text-decoration: none;
-        font-size: 18px;
+        font-size: 16px;
+        line-height: $global-side-menu-item-height;
         color: $global-side-menu-item-link-color;
-        &:hover{
-          opacity: .4;
-          @include transition(all 0.2s ease-in-out);
-        }
       }
-      .badge{
+      border-left: 4px solid $global-side-menu-item-bg;
+      &:hover {
+        border-left: 4px solid $global-side-menu-item-link-color;
+      }
+      .badge {
         float: right;
-        display:table-cell;
+        display: table-cell;
         vertical-align: middle;
       }
-      .item-icon{
+      .item-icon {
         font-size: 24px;
         background-color: $global-side-menu-item-icon-bg;
         color: $global-side-menu-item-color;
         border-radius: $global-side-menu-item-border-radius;
-        width: $global-side-menu-item-icon-size;
-        height: $global-side-menu-item-icon-size;
-        margin-left: $global-side-menu-item-padding;
-        padding-top: $global-side-menu-item-padding * 2 - 1px;
+        min-width: $global-side-menu-item-min-icon-size;
+        min-height: $global-side-menu-item-min-icon-size;
+        width: auto;
+        height: auto;
+        margin-left: $global-side-menu-item-icon-padding;
+        padding: $global-side-menu-item-icon-padding * 2 - 1px;
         text-align: center;
         margin-right: 8px;
       }
+      .no-item-icon{
+        padding-left: $global-side-menu-item-height;
+        margin-right: 12px;
+      }
+      &[aria-expanded=true]{
+        background-color: $global-side-menu-item-child-bg!important;
+      }
     }
+
+    .collapsing,.collapse{
+      margin-left: $global-side-menu-item-child-margin-left;
+    }
+
+    .collapsing .side-menu-item ,.collapse .side-menu-item {
+      background-color: $global-side-menu-item-child-bg;
+      border-left: 4px solid $global-side-menu-item-child-bg;
+      &:hover {
+        border-left: 4px solid $global-side-menu-item-link-color;
+      }
+    }
+
+
   }
 }
 
@@ -81,14 +124,14 @@ $global-logo-padding-left: 26px;
   min-height: $global-top-height;
   background-color: $global-top-menu-bg;
   width: 100%;
- // @include box-shadow(0 2px 4px rgba(0, 0, 0, .1));
+  // @include box-shadow(0 2px 4px rgba(0, 0, 0, .1));
   .sub-menu .btn {
     font-size: 24px;
     border: none;
   }
-  .center-menu{
+  .center-menu {
     padding-top: 6px;
-    .input-group-addon{
+    .input-group-addon {
       background-color: $global-top-menu-bg;
     }
   }
@@ -97,44 +140,44 @@ $global-logo-padding-left: 26px;
 //content
 $main-body-content-padding: 16px;
 $main-body-separate-boder: $gray-lighter;
-$main-top-content-bg: lighten($global-side-menu-bg,90%);
+$main-top-content-bg: lighten($global-side-menu-bg, 90%);
 $main-top-content-margin-top: 16px;
 $main-top-content-nav-item-border: $brand-primary;
-.main-content{
+.main-content {
   margin-left: $global-side-menu-width;
-  .main-top-content{
+  .main-top-content {
     background-color: $main-top-content-bg;
     padding-top: $main-top-content-margin-top;
-    .nav-tabs{
-      > li{
+    .nav-tabs {
+      > li {
         margin-bottom: 0;
         min-width: 96px;
-        a{
+        a {
           text-align: center;
           background: none;
           border: none;
-          &:hover,&:active,&:focus{
+          &:hover, &:active, &:focus {
             background: none;
             border: none;
           }
         }
-        &.active a{
-          border-bottom:4px solid $main-top-content-nav-item-border;
+        &.active a {
+          border-bottom: 4px solid $main-top-content-nav-item-border;
         }
       }
     }
   }
-  .main-body-content{
+  .main-body-content {
     padding: $main-body-content-padding;
-    .separate-border{
+    .separate-border {
       border-right: 1px solid $main-body-separate-boder;
     }
   }
-  .page-header{
+  .page-header {
     margin-top: 0;
     padding-top: 12px;
   }
-  .navbar-toggle-button{
+  .navbar-toggle-button {
     display: none;
   }
 }
@@ -149,28 +192,42 @@ $main-top-content-nav-item-border: $brand-primary;
   }
 }
 
+$navbar-toggle-button-bg: #fafafa;
+
 @media (max-width: $grid-float-breakpoint) {
-  .main-content{
-    .navbar-toggle-button{
+  .main-content {
+    .navbar-toggle-button {
       display: inline-block;
       font-size: 33px;
       cursor: pointer;
       width: 44px;
       height: 44px;
-      background: #fafafa;
+      background: $navbar-toggle-button-bg;
       text-align: center;
       line-height: 44px;
       border-radius: $border-radius-large;
+      a {
+        text-decoration: none !important;
+      }
+
+      &.open {
+        margin-left: $global-side-menu-width;
+      }
     }
+
   }
-  .global-side-menu{
+  .global-side-menu {
+    display: none;
     min-width: 0;
     width: 0;
     opacity: 0;
     @include transition(all 0.2s ease-in);
   }
-  .main-content{
+  .main-content {
     margin-left: 0;
     @include transition(all 0.4s ease-out);
   }
 }
+
+
+

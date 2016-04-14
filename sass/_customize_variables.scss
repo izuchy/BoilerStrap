@@ -1,24 +1,27 @@
 //基本の色設定
 
-$gray-base:              #000 !default;
-$gray-darker:            lighten($gray-base, 13.5%) !default; // #222
-$gray-dark:              lighten($gray-base, 20%) !default;   // #333
-$gray:                   lighten($gray-base, 33.5%) !default; // #555
-$gray-light:             lighten($gray-base, 46.7%) !default; // #777
-$gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
+$gray-base: #000 !default;
+$gray-darker: lighten($gray-base, 13.5%) !default; // #222
+$gray-dark: lighten($gray-base, 20%) !default; // #333
+$gray: lighten($gray-base, 33.5%) !default; // #555
+$gray-light: lighten($gray-base, 46.7%) !default; // #777
+$gray-lighter: lighten($gray-base, 93.5%) !default; // #eee
 
-$brand-primary:         darken(#38A9E0, 6.5%) !default;
-$brand-success:         #38A9E0 !default;
-$brand-info:            #8DC35D !default;
-$brand-warning:         #E8BC47 !default;
-$brand-danger:          #FF5E5B !default;
+$brand-primary: darken(#38A9E0, 6.5%) !default;
+$brand-success: #38A9E0 !default;
+$brand-info: #8DC35D !default;
+$brand-warning: #E8BC47 !default;
+$brand-danger: #FF5E5B !default;
 
-$border-radius-base:        2px !default;
-$border-radius-large:       4px !default;
-$border-radius-small:       1px !default;
+$border-radius-base: 2px !default;
+$border-radius-large: 4px !default;
+$border-radius-small: 1px !default;
 
 //フォント設定
-$font-family-sans-serif:  "Roboto Slab" , Garamond , "Times New Roman" , "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif!default;
-$font-family-serif:       Avenir , "Open Sans" , "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif!default;
-$font-family-base:        $font-family-serif !default;
-$line-height-base:        1.4142 !default;
+$font-family-sans-serif: "Roboto Slab", Garamond, "Times New Roman", "Hiragino Mincho Pro", "HiraMinProN-W3", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif !default;
+$font-family-serif: Avenir, "Open Sans", "Helvetica Neue", Helvetica, Arial, Verdana, Roboto, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif !default;
+$font-family-base: $font-family-serif !default;
+$line-height-base: 1.4142 !default;
+
+$well-bg: #fcfcfc;
+$well-border: darken($well-bg, 5%) !default;
