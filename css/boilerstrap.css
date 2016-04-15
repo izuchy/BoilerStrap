@@ -32,7 +32,8 @@ a {
     width: 100%;
     list-style-type: none; }
     .global-side-menu .side-menu-list > .side-menu-item {
-      margin-top: 4px !important; }
+      margin-top: 4px !important;
+      border-top: 1px solid gray !important; }
     .global-side-menu .side-menu-list .side-menu-item {
       padding: 4px;
       background-color: #666666;
@@ -41,7 +42,7 @@ a {
       display: table;
       width: 100%;
       margin-bottom: -1px;
-      border: 1px solid transparent;
+      border-top: 1px solid #737373;
       border-radius: 2px;
       cursor: pointer;
       border-left: 4px solid #666666; }

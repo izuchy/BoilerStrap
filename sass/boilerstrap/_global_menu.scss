@@ -52,6 +52,7 @@ $global-side-menu-item-child-margin-left: 12px;
     list-style-type: none;
     >.side-menu-item{
       margin-top: 4px!important;
+      border-top: 1px solid lighten($global-side-menu-item-bg,10%)!important;
     }
     .side-menu-item {
       padding: $global-side-menu-item-padding;
@@ -61,7 +62,7 @@ $global-side-menu-item-child-margin-left: 12px;
       display: table;
       width: 100%;
       margin-bottom: $global-side-menu-item-margin-bottom;
-      border: 1px solid transparent;
+      border-top: 1px solid lighten($global-side-menu-item-bg,5%);
       border-radius: $global-side-menu-item-border-radius;
       cursor: pointer;
       a {
