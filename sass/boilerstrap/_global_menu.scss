@@ -1,3 +1,7 @@
+a{
+  outline: none;
+}
+
 //side menu
 $global-side-menu-bg: #525252;
 $global-side-menu-item-bg: lighten($global-side-menu-bg, 8%);
@@ -5,14 +9,14 @@ $global-side-menu-item-child-bg:  lighten($global-side-menu-bg, 16%);
 $global-side-menu-item-icon-bg: lighten($global-side-menu-bg, 60%);
 $global-side-menu-item-color: $global-side-menu-bg;
 $global-side-menu-item-link-color: #fff;
-$global-side-menu-width: 260px;
+$global-side-menu-width: 220px;
 $global-side-menu-item-border-radius: $border-radius-base !default;
-$global-side-menu-item-height: 32px;
+$global-side-menu-item-height: 24px;
 $global-side-menu-item-padding: 4px;
 $global-side-menu-item-icon-padding: 2px;
-$global-side-menu-item-min-icon-size: 30px;
+$global-side-menu-item-min-icon-size: 22px;
 $global-side-menu-item-margin: 16px;
-$global-side-menu-item-margin-bottom: 12px;
+$global-side-menu-item-margin-bottom: -1px;
 $global-side-menu-item-child-margin-left: 12px;
 
 .global-side-menu {
@@ -46,8 +50,11 @@ $global-side-menu-item-child-margin-left: 12px;
     padding: $global-side-menu-item-margin;
     width: 100%;
     list-style-type: none;
+    >.side-menu-item{
+      margin-top: 4px!important;
+    }
     .side-menu-item {
-      padding-top: $global-side-menu-item-padding;
+      padding: $global-side-menu-item-padding;
       background-color: $global-side-menu-item-bg;
       height: $global-side-menu-item-height;
       vertical-align: middle;
@@ -63,7 +70,7 @@ $global-side-menu-item-child-margin-left: 12px;
         width: inherit;
         vertical-align: middle;
         text-decoration: none;
-        font-size: 16px;
+        font-size: 14px;
         line-height: $global-side-menu-item-height;
         color: $global-side-menu-item-link-color;
       }
@@ -77,7 +84,7 @@ $global-side-menu-item-child-margin-left: 12px;
         vertical-align: middle;
       }
       .item-icon {
-        font-size: 24px;
+        font-size: 16px;
         background-color: $global-side-menu-item-icon-bg;
         color: $global-side-menu-item-color;
         border-radius: $global-side-menu-item-border-radius;
