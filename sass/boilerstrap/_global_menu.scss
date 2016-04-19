@@ -66,9 +66,6 @@ $global-side-menu-item-child-margin-left: 12px;
       border-top: 1px solid lighten($global-side-menu-item-bg,5%);
       border-radius: $global-side-menu-item-border-radius;
       cursor: pointer;
-      &.selected{
-        border-left: 4px solid $global-side-menu-item-selected-border-color;
-      }
       a {
         display: table-cell;
         height: $global-side-menu-item-height;
@@ -80,6 +77,9 @@ $global-side-menu-item-child-margin-left: 12px;
         color: $global-side-menu-item-link-color;
       }
       border-left: 4px solid $global-side-menu-item-bg;
+      &.selected{
+        border-left: 4px solid $global-side-menu-item-selected-border-color;
+      }
       &:hover {
         border-left: 4px solid $global-side-menu-item-link-color;
       }

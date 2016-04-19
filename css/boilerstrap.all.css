@@ -46,8 +46,6 @@
       border-radius: 2px;
       cursor: pointer;
       border-left: 4px solid #666666; }
-      .global-side-menu .side-menu-list .side-menu-item.selected {
-        border-left: 4px solid #219bd6; }
       .global-side-menu .side-menu-list .side-menu-item a {
         display: table-cell;
         height: 24px;
@@ -57,6 +55,8 @@
         font-size: 14px;
         line-height: 24px;
         color: #fff; }
+      .global-side-menu .side-menu-list .side-menu-item.selected {
+        border-left: 4px solid #219bd6; }
       .global-side-menu .side-menu-list .side-menu-item:hover {
         border-left: 4px solid #fff; }
       .global-side-menu .side-menu-list .side-menu-item .badge {
@@ -8092,6 +8092,9 @@ body {
   .panel.panel-default .panel-heading {
     border-bottom-style: dotted;
     background: #fff; }
+
+.vertical-middle th, .vertical-middle td {
+  vertical-align: middle !important; }
 
 /*!
  *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
