@@ -1,17 +1,6 @@
 @charset "UTF-8";
-a {
-  outline: none !important; }
-
-html, body {
-  background: #fafafa; }
-
-.main {
-  min-height: 100%; }
-  .main .main-content {
-    min-height: 100%; }
-
 .navbar {
-  border: none; }
+  border: none !important; }
 
 .global-side-menu {
   position: fixed;
@@ -172,6 +161,18 @@ html, body {
     -webkit-transition: all 0.4s ease-out;
     -o-transition: all 0.4s ease-out;
     transition: all 0.4s ease-out; } }
+
+.panel-xs {
+  max-width: 400px; }
+
+.panel-sm {
+  max-width: 600px; }
+
+.panel-md {
+  max-width: 800px; }
+
+.panel-lg {
+  max-width: 1000px; }
 
 /*!
  *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -8075,20 +8076,22 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-.panel-xs {
-  max-width: 400px; }
+a {
+  outline: none !important; }
 
-.panel-sm {
-  max-width: 600px; }
+body {
+  background: #fcfcfc; }
 
-.panel-md {
-  max-width: 800px; }
-
-.panel-lg {
-  max-width: 1000px; }
+.main {
+  min-height: 100%; }
+  .main .main-content {
+    min-height: 100%; }
 
 .panel {
-  border: medium none; }
+  border: none; }
+  .panel.panel-default .panel-heading {
+    border-bottom-style: dotted;
+    background: #fff; }
 
 /*!
  *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
