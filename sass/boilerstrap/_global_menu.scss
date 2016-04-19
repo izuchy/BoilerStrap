@@ -78,7 +78,7 @@ $global-side-menu-item-child-margin-left: 12px;
       }
       border-left: 4px solid $global-side-menu-item-bg;
       &.selected{
-        border-left: 4px solid $global-side-menu-item-selected-border-color;
+        border-left: 4px solid $global-side-menu-item-selected-border-color!important;
       }
       &:hover {
         border-left: 4px solid $global-side-menu-item-link-color;
