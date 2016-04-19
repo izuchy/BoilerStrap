@@ -6,6 +6,7 @@
 @import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 
 //boilerstrap
+@import "boilerstrap/common";
 @import "boilerstrap/global_menu";
 
 //font-awesome
@@ -19,3 +20,4 @@
 
 // Core variables and mixins
 @import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "boilerstrap/override/panel";
