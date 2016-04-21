@@ -12,6 +12,9 @@
     "**/.*",
     "node_modules",
     "bower_components",
+    "js/sg*",
+    "styleguide",
+    "sass",
     "test",
     "tests"
   ],
