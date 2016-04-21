@@ -1,5 +1,5 @@
 {
-  "name": "BoilerStrap",
+  "name": "boilerstrap",
   "authors": [
     "Takahiro Izuchi <izuchi@impath.jp>"
   ],
@@ -9,7 +9,7 @@
   "license": "MIT",
   "homepage": "",
   "ignore": [
-    "**/.*",
+    "/.*",
     "node_modules",
     "bower_components",
     "js/sg*",
