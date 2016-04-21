@@ -16,7 +16,10 @@
     "styleguide",
     "sass",
     "test",
-    "tests"
+    "tests",
+    "index.html",
+    "gulpfile.js",
+    "package.json"
   ],
   "dependencies": {
     "bootstrap-sass": "^3.3.6",
