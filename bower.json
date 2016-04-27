@@ -14,7 +14,6 @@
     "bower_components",
     "js/sg*",
     "styleguide",
-    "sass",
     "test",
     "tests",
     "index.html",
