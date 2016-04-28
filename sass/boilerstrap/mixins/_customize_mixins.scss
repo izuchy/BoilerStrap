@@ -1,0 +1,50 @@
+@mixin button-variant-invert($color){
+  color: $color;
+  background: none;
+  border:solid 1px $color!important;
+  &:focus,
+  &.focus {
+    color: darken($color, 25%)!important;
+    background-color: lighten($color, 40%);
+    border-color: darken($color, 25%);
+  }
+  &:hover {
+    color: darken($color, 25%)!important;
+    background-color: lighten($color, 40%);
+    border-color: darken($color, 12%);
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: darken($color, 25%)!important;
+    background-color: lighten($color, 40%);
+    border-color: darken($color, 12%);
+
+    &:hover,
+    &:focus,
+    &.focus {
+      color: darken($color, 25%)!important;
+      background-color: lighten($color, 57%);
+      border-color: darken($color, 25%);
+    }
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus,
+    &.focus {
+      background: none;
+      border-color: $color;
+    }
+  }
+  .badge {
+    color: #fff;
+    background: $color;
+  }
+}

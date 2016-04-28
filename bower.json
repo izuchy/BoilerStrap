@@ -25,6 +25,7 @@
     "font-awesome": "^4.5.0"
   },
   "dependencies": {
-    "bootstrap-sass": "boostrap-sass#^3.3.6"
+    "bootstrap-sass": "boostrap-sass#^3.3.6",
+    "font-awesome": "^4.6.1"
   }
 }

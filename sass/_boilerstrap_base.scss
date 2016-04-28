@@ -1,6 +1,7 @@
 //customize bootstrap
-@import "customize_variables";
-@import "variables";
+@import "boilerstrap/variables/customize_variables";
+@import "boilerstrap/variables/variables";
+@import "boilerstrap/mixins/customize_mixins";
 
 //Bootstrap mixins
 @import "../bootstrap-sass/assets/stylesheets/bootstrap/mixins";
