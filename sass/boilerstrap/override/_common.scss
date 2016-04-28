@@ -1,0 +1,30 @@
+a {
+  outline: none !important;
+}
+
+body {
+  background: #fcfcfc;
+}
+
+.main {
+  min-height: 100%;
+  .main-content {
+    min-height: 100%;
+  }
+}
+
+.panel {
+  border: none;
+  &.panel-default {
+    .panel-heading {
+      border-bottom-style: dotted;
+      background: #fff;
+    }
+  }
+}
+
+.vertical-middle{
+  th,td{
+    vertical-align: middle!important;
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "name": "BoilerStrap",
+  "name": "boilerstrap",
   "authors": [
     "Takahiro Izuchi <izuchi@impath.jp>"
   ],
@@ -9,13 +9,18 @@
   "license": "MIT",
   "homepage": "",
   "ignore": [
-    "**/.*",
+    "/.*",
     "node_modules",
     "bower_components",
+    "js/sg*",
+    "styleguide",
     "test",
-    "tests"
+    "tests",
+    "index.html",
+    "gulpfile.js",
+    "package.json"
   ],
-  "dependencies": {
+  "devDependencies": {
     "bootstrap-sass": "^3.3.6",
     "font-awesome": "^4.5.0"
   }
