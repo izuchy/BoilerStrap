@@ -8,10 +8,31 @@
     });
 </script>
 <section class="main">
-    <div class="global-side-menu" style="position: absolute;">
-        <div class="logo">
-            <img src="./images/logo.png" width="44px" height="44px">
+    <div class="global-top-menu">
+        <div class="row">
+            <div class="col-md-2 col-sm-2 col-xs-2">
+                <div class="logo">
+                    <img src="images/logo.png" class="logo">
+                </div>
+            </div>
+            <div class="col-md-10 col-sm-10 col-xs-10 sub-menu">
+                <div class="text-right">
+                    <button type="button" class="btn btn-default" data-toggle="popover" title=""
+                            data-content="現在お知らせはありません" data-placement="bottom">
+                        <i class="fa fa-bell"></i>
+                    </button>
+                    <button type="button" class="btn btn-default" data-toggle="popover" title=""
+                            data-content="" data-placement="bottom">
+                        <i class="fa fa-gear"></i>
+                    </button>
+                    <div class="btn btn-default navbar-toggle-button">
+                        <a href="#"></a>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+    <div class="global-side-menu" style="position: absolute;">
         <ul class="side-menu-list">
             <li class="side-menu-item"><a href="#"><i class="item-icon fa fa-home"></i> ホーム</a></li>
             <li class="side-menu-item"><a href="#"><i class="item-icon fa fa-feed"></i> ニュース</a></li>
@@ -25,36 +46,11 @@
         </ul>
     </div>
     <div class="main-content">
-        <div class="global-top-menu">
-            <div class="navbar-toggle-button">
-                <a href="#">≡</a>
-            </div>
-            <div class="row">
-                <div class="col-md-offset-1 col-md-8 col-sm-8 col-xs-8 center-menu">
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="fa fa-search"></i></span>
-                        <input type="text" class="form-control" placeholder="検索キーワード">
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-4 sub-menu">
-                    <div class="text-right">
-                        <button type="button" class="btn btn-default" data-toggle="popover" title=""
-                                data-content="現在お知らせはありません" data-placement="bottom">
-                            <i class="fa fa-bell"></i>
-                        </button>
-                        <button type="button" class="btn btn-default" data-toggle="popover" title=""
-                                data-content="" data-placement="bottom">
-                            <i class="fa fa-gear"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="main-top-content">
             <ul class="nav nav-tabs" role="tablist">
                 <li class="active"><a href="#all" aria-controls="all" role="tab"
-                                       data-toggle="tab">全社</a></li>
-                <li><a href="#division" aria-controls="division" role="tab" data-toggle="tab">◯◯事業部</a>
+                                       data-toggle="tab">全体</a></li>
+                <li><a href="#division" aria-controls="division" role="tab" data-toggle="tab">◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</a>
                 </li>
                 <li><a href="#group" aria-controls="group" role="tab"
                         data-toggle="tab">◯◯グループ</a></li>

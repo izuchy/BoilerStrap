@@ -132,6 +132,15 @@ $global-top-menu-bg: #fff;
 $global-top-height: 55px;
 $global-logo-padding-left: 26px;
 .global-top-menu {
+
+  .navbar-toggle-button {
+    display: none;
+  }
+  .logo{
+    height: 44px;
+    width: auto;
+    max-width: 100%;
+  }
   padding: 5px;
   min-height: $global-top-height;
   background-color: $global-top-menu-bg;
@@ -152,7 +161,7 @@ $global-logo-padding-left: 26px;
 //content
 $main-body-content-padding: 16px;
 $main-body-separate-boder: $gray-lighter;
-$main-top-content-bg: lighten($global-side-menu-bg, 90%);
+$main-top-content-bg: #F0F0F0;
 $main-top-content-margin-top: 16px;
 $main-top-content-nav-item-border: $brand-primary;
 .main-content {
@@ -163,17 +172,27 @@ $main-top-content-nav-item-border: $brand-primary;
     .nav-tabs {
       > li {
         margin-bottom: 0;
-        min-width: 96px;
+        width: 25%;
+        border-right: 1px dotted $main-body-separate-boder;
         a {
+          overflow: hidden;
+          text-overflow: ellipsis;
           text-align: center;
           background: none;
           border: none;
-          &:hover, &:active, &:focus {
+          border-bottom: 4px solid $main-top-content-bg;
+          &:hover, &:focus {
             background: none;
             border: none;
+            border-bottom: 4px solid $main-top-content-bg;
+          }
+          &.active{
+            background: none;
+            border: none;
+            border-bottom: 4px solid $main-top-content-bg;
           }
         }
-        &.active a {
+        &.active a{
           border-bottom: 4px solid $main-top-content-nav-item-border;
         }
       }
@@ -188,9 +207,6 @@ $main-top-content-nav-item-border: $brand-primary;
   .page-header {
     margin-top: 0;
     padding-top: 12px;
-  }
-  .navbar-toggle-button {
-    display: none;
   }
 }
 
@@ -207,7 +223,7 @@ $main-top-content-nav-item-border: $brand-primary;
 $navbar-toggle-button-bg: #fafafa;
 
 @media (max-width: $grid-float-breakpoint) {
-  .main-content {
+  .global-top-menu {
     .navbar-toggle-button {
       display: inline-block;
       font-size: 33px;
@@ -216,17 +232,19 @@ $navbar-toggle-button-bg: #fafafa;
       height: 44px;
       background: $navbar-toggle-button-bg;
       text-align: center;
-      line-height: 44px;
+      //line-height: 44px;
       border-radius: $border-radius-large;
+      & a:after{
+        content: '≡'
+      }
       a {
         text-decoration: none !important;
       }
-
-      &.open {
-        margin-left: $global-side-menu-width;
+      &.open a:after {
+        content: '×'
+       // margin-left: $global-side-menu-width;
       }
     }
-
   }
   .global-side-menu {
     display: none;
@@ -234,6 +252,9 @@ $navbar-toggle-button-bg: #fafafa;
     width: 0;
     opacity: 0;
     @include transition(all 0.2s ease-in);
+    &.open{
+      top: 0;
+    }
   }
   .main-content {
     margin-left: 0;

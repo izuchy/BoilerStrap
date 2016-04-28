@@ -94,6 +94,12 @@
   min-height: 55px;
   background-color: #fff;
   width: 100%; }
+  .global-top-menu .navbar-toggle-button {
+    display: none; }
+  .global-top-menu .logo {
+    height: 44px;
+    width: auto;
+    max-width: 100%; }
   .global-top-menu .sub-menu .btn {
     font-size: 24px;
     border: none; }
@@ -105,18 +111,27 @@
 .main-content {
   margin-left: 220px; }
   .main-content .main-top-content {
-    background-color: white;
+    background-color: #F0F0F0;
     padding-top: 16px; }
     .main-content .main-top-content .nav-tabs > li {
       margin-bottom: 0;
-      min-width: 96px; }
+      width: 25%;
+      border-right: 1px dotted #eeeeee; }
       .main-content .main-top-content .nav-tabs > li a {
+        overflow: hidden;
+        text-overflow: ellipsis;
         text-align: center;
         background: none;
-        border: none; }
-        .main-content .main-top-content .nav-tabs > li a:hover, .main-content .main-top-content .nav-tabs > li a:active, .main-content .main-top-content .nav-tabs > li a:focus {
+        border: none;
+        border-bottom: 4px solid #F0F0F0; }
+        .main-content .main-top-content .nav-tabs > li a:hover, .main-content .main-top-content .nav-tabs > li a:focus {
           background: none;
-          border: none; }
+          border: none;
+          border-bottom: 4px solid #F0F0F0; }
+        .main-content .main-top-content .nav-tabs > li a.active {
+          background: none;
+          border: none;
+          border-bottom: 4px solid #F0F0F0; }
       .main-content .main-top-content .nav-tabs > li.active a {
         border-bottom: 4px solid #219bd6; }
   .main-content .main-body-content {
@@ -126,15 +141,13 @@
   .main-content .page-header {
     margin-top: 0;
     padding-top: 12px; }
-  .main-content .navbar-toggle-button {
-    display: none; }
 
 @media (max-width: 767px) {
   .main-top-content .nav-tabs li {
     width: 100%; } }
 
 @media (max-width: 768px) {
-  .main-content .navbar-toggle-button {
+  .global-top-menu .navbar-toggle-button {
     display: inline-block;
     font-size: 33px;
     cursor: pointer;
@@ -142,12 +155,13 @@
     height: 44px;
     background: #fafafa;
     text-align: center;
-    line-height: 44px;
     border-radius: 4px; }
-    .main-content .navbar-toggle-button a {
+    .global-top-menu .navbar-toggle-button a:after {
+      content: '≡'; }
+    .global-top-menu .navbar-toggle-button a {
       text-decoration: none !important; }
-    .main-content .navbar-toggle-button.open {
-      margin-left: 220px; }
+    .global-top-menu .navbar-toggle-button.open a:after {
+      content: "×"; }
   .global-side-menu {
     display: none;
     min-width: 0;
@@ -156,6 +170,8 @@
     -webkit-transition: all 0.2s ease-in;
     -o-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in; }
+    .global-side-menu.open {
+      top: 0; }
   .main-content {
     margin-left: 0;
     -webkit-transition: all 0.4s ease-out;
