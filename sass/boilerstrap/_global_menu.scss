@@ -132,7 +132,6 @@ $global-top-menu-bg: #fff;
 $global-top-height: 55px;
 $global-logo-padding-left: 26px;
 .global-top-menu {
-
   .navbar-toggle-button {
     display: none;
   }
@@ -140,12 +139,18 @@ $global-logo-padding-left: 26px;
     height: 44px;
     width: auto;
     max-width: 100%;
+    img{
+      width:auto;height:24px;margin: 12px;
+    }
   }
+  position: fixed;
+  top:0;
+  z-index:999;
   padding: 5px;
   min-height: $global-top-height;
   background-color: $global-top-menu-bg;
   width: 100%;
-  // @include box-shadow(0 2px 4px rgba(0, 0, 0, .1));
+  @include box-shadow(0 2px 4px rgba(0, 0, 0, .1));
   .sub-menu .btn {
     font-size: 24px;
     border: none;
@@ -165,6 +170,7 @@ $main-top-content-bg: #F0F0F0;
 $main-top-content-margin-top: 16px;
 $main-top-content-nav-item-border: $brand-primary;
 .main-content {
+  margin-top: $global-top-height;
   margin-left: $global-side-menu-width;
   .main-top-content {
     background-color: $main-top-content-bg;

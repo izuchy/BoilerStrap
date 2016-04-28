@@ -90,16 +90,25 @@
         border-left: 4px solid #fff; }
 
 .global-top-menu {
+  position: fixed;
+  top: 0;
+  z-index: 999;
   padding: 5px;
   min-height: 55px;
   background-color: #fff;
-  width: 100%; }
+  width: 100%;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
   .global-top-menu .navbar-toggle-button {
     display: none; }
   .global-top-menu .logo {
     height: 44px;
     width: auto;
     max-width: 100%; }
+    .global-top-menu .logo img {
+      width: auto;
+      height: 24px;
+      margin: 12px; }
   .global-top-menu .sub-menu .btn {
     font-size: 24px;
     border: none; }
@@ -109,6 +118,7 @@
       background-color: #fff; }
 
 .main-content {
+  margin-top: 55px;
   margin-left: 220px; }
   .main-content .main-top-content {
     background-color: #F0F0F0;
