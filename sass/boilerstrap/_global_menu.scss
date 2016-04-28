@@ -9,7 +9,7 @@ $global-side-menu-item-child-bg:  lighten($global-side-menu-bg, 16%);
 $global-side-menu-item-icon-bg: lighten($global-side-menu-bg, 60%);
 $global-side-menu-item-color: $global-side-menu-bg;
 $global-side-menu-item-link-color: #fff;
-$global-side-menu-item-selected-border-color: #219bd6;
+$global-side-menu-item-selected-border-color: lighten($brand-primary, 20%);
 $global-side-menu-width: 220px;
 $global-side-menu-item-border-radius: $border-radius-base !default;
 $global-side-menu-item-height: 24px;
