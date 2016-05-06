@@ -4,14 +4,14 @@
 @import "boilerstrap/mixins/customize_mixins";
 
 //Bootstrap mixins
-@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+@import "../bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 
 //boilerstrap
 @import "boilerstrap/global_menu";
 @import "boilerstrap/panel";
 
 //font-awesome
-@import "../bower_components/font-awesome/scss/font-awesome.scss";
+@import "../font-awesome/scss/font-awesome.scss";
 
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
@@ -20,5 +20,5 @@
  */
 
 // Core variables and mixins
-@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../bootstrap-sass/assets/stylesheets/bootstrap";
 @import "boilerstrap/override/common";
