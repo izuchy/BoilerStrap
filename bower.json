@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "bootstrap-sass": "boostrap-sass#^3.3.6",
-    "font-awesome": "^4.6.1"
+    "font-awesome": "^4.6.1",
+    "material-design-icons": "^2.2.3"
   }
 }

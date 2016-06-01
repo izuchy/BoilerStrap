@@ -1,0 +1,76 @@
+.table{
+  height: 100%;
+  td{
+    height: 100%;
+  }
+  .table-sub-data{
+    padding-top: 8px;
+    .item{
+      color: $gray-light;
+      margin: 0;
+      line-height: 1.8em;
+      .item-label{
+        min-width: 90px;
+        max-width: 90px;
+        text-align: right;
+        padding-right: 20px;
+        display: inline-block;
+      }
+    }
+  }
+  &.table-border-reverse{
+    // Cells
+    > thead,
+    > tbody,
+    > tfoot {
+      > tr {
+        > th,
+        > td {
+          border-top: none;
+          border-bottom: 1px solid $table-border-color;
+        }
+      }
+    }
+  }
+  .table-action{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    .top{
+      height: 50%;
+      width: 100%;
+      position: relative;
+      .top-item{
+        position: absolute;
+        top:0;
+        right:0;
+        vertical-align: top;
+      }
+    }
+    .bottom{
+      height: 50%;
+      width: 100%;
+      position: relative;
+      .bottom-item{
+        position: absolute;
+        bottom:0;
+        right:0;
+        vertical-align: bottom;
+      }
+    }
+  }
+  .vertical-top{
+    vertical-align: top;
+  }
+  .vertical-middle{
+    vertical-align: middle;
+  }
+  .vertical-bottom{
+    vertical-align: bottom;
+  }
+  .form-always-inline .form-control{
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+  }
+}

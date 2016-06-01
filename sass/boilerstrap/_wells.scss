@@ -1,0 +1,11 @@
+
+$well-light-bg: #f5f5f5;
+$well-light-border:
+.well-light{
+  background-color: $well-light-bg!important;
+}
+
+.well {
+  background-color: $well-bg;
+  border: 1px solid $well-border;
+}

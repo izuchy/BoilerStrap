@@ -200,16 +200,144 @@
 .panel-lg {
   max-width: 1000px; }
 
+.btn-secondary {
+  color: #219bd6;
+  background: #fff;
+  border: solid 1px #219bd6 !important; }
+  .btn-secondary:focus, .btn-secondary.focus {
+    color: #1a7ba9 !important;
+    background-color: white;
+    border-color: #104b67; }
+  .btn-secondary:hover {
+    color: #1a7ba9 !important;
+    background-color: white;
+    border-color: #1974a1; }
+  .btn-secondary:active, .btn-secondary.active,
+  .open > .btn-secondary.dropdown-toggle {
+    color: #1a7ba9 !important;
+    background-color: white;
+    border-color: #1974a1; }
+    .btn-secondary:active:hover, .btn-secondary:active:focus, .btn-secondary:active.focus, .btn-secondary.active:hover, .btn-secondary.active:focus, .btn-secondary.active.focus,
+    .open > .btn-secondary.dropdown-toggle:hover,
+    .open > .btn-secondary.dropdown-toggle:focus,
+    .open > .btn-secondary.dropdown-toggle.focus {
+      color: #1a7ba9 !important;
+      background-color: white;
+      border-color: #104b67; }
+  .btn-secondary:active, .btn-secondary.active,
+  .open > .btn-secondary.dropdown-toggle {
+    background: none; }
+  .btn-secondary.disabled:hover, .btn-secondary.disabled:focus, .btn-secondary.disabled.focus, .btn-secondary[disabled]:hover, .btn-secondary[disabled]:focus, .btn-secondary[disabled].focus,
+  fieldset[disabled] .btn-secondary:hover,
+  fieldset[disabled] .btn-secondary:focus,
+  fieldset[disabled] .btn-secondary.focus {
+    background: none;
+    border-color: #219bd6; }
+  .btn-secondary .badge {
+    color: #fff;
+    background: #219bd6; }
+
+.btn-link-done {
+  color: #FF807C !important; }
+
+.table {
+  height: 100%; }
+  .table td {
+    height: 100%; }
+  .table .table-sub-data {
+    padding-top: 8px; }
+    .table .table-sub-data .item {
+      color: #777777;
+      margin: 0;
+      line-height: 1.8em; }
+      .table .table-sub-data .item .item-label {
+        min-width: 90px;
+        max-width: 90px;
+        text-align: right;
+        padding-right: 20px;
+        display: inline-block; }
+  .table.table-border-reverse > thead > tr > th,
+  .table.table-border-reverse > thead > tr > td,
+  .table.table-border-reverse > tbody > tr > th,
+  .table.table-border-reverse > tbody > tr > td,
+  .table.table-border-reverse > tfoot > tr > th,
+  .table.table-border-reverse > tfoot > tr > td {
+    border-top: none;
+    border-bottom: 1px solid #ddd; }
+  .table .table-action {
+    height: 100%;
+    width: 100%;
+    position: relative; }
+    .table .table-action .top {
+      height: 50%;
+      width: 100%;
+      position: relative; }
+      .table .table-action .top .top-item {
+        position: absolute;
+        top: 0;
+        right: 0;
+        vertical-align: top; }
+    .table .table-action .bottom {
+      height: 50%;
+      width: 100%;
+      position: relative; }
+      .table .table-action .bottom .bottom-item {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        vertical-align: bottom; }
+  .table .vertical-top {
+    vertical-align: top; }
+  .table .vertical-middle {
+    vertical-align: middle; }
+  .table .vertical-bottom {
+    vertical-align: bottom; }
+  .table .form-always-inline .form-control {
+    display: inline-block;
+    vertical-align: middle;
+    width: auto; }
+
+.text-done {
+  color: #FF807C; }
+
+a.text-done:hover,
+a.text-done:focus {
+  color: #ff4f49; }
+
+.page-header-primary {
+  border-color: #b3b3b3 !important;
+  border-width: 2px !important; }
+
+.size-lg {
+  width: 180px;
+  max-width: 180px; }
+
+.size-md {
+  width: 120px;
+  max-width: 120px; }
+
+.size-sm {
+  width: 90px;
+  max-width: 90px; }
+
+.size-xs {
+  width: 60px;
+  max-width: 60px; }
+
+.size-300 {
+  width: 300px;
+  max-width: 300px; }
+
 /*!
- *  Font Awesome 4.6.1 by @davegandy - http://fontawesome.io - @fontawesome
+ *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 /* FONT PATH
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.eot?v=4.6.1");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.6.1") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.6.1") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.6.1") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.6.1") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.6.1#fontawesomeregular") format("svg");
+  src: url("../fonts/fontawesome-webfont.eot?v=4.6.3");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.6.3") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.6.3") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.6.3") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.6.3") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -1578,7 +1706,7 @@
 .fa-digg:before {
   content: ""; }
 
-.fa-pied-piper:before {
+.fa-pied-piper-pp:before {
   content: ""; }
 
 .fa-pied-piper-alt:before {
@@ -1704,6 +1832,7 @@
   content: ""; }
 
 .fa-ra:before,
+.fa-resistance:before,
 .fa-rebel:before {
   content: ""; }
 
@@ -2351,6 +2480,26 @@
 
 .fa-snapchat-square:before {
   content: ""; }
+
+.fa-pied-piper:before {
+  content: ""; }
+
+.fa-first-order:before {
+  content: ""; }
+
+.fa-yoast:before {
+  content: ""; }
+
+.fa-themeisle:before {
+  content: ""; }
+
+.fa-google-plus-circle:before,
+.fa-google-plus-official:before {
+  content: ""; }
+
+.fa-fa:before,
+.fa-font-awesome:before {
+  content: ""; }
 
 .sr-only {
   position: absolute;
@@ -5427,24 +5576,27 @@ fieldset[disabled] a.btn {
     color: #FF5E5B;
     background-color: #fff; }
 
-.btn-link {
+.btn-link, .btn-link-done {
   color: #219bd6;
   font-weight: normal;
   border-radius: 0; }
-  .btn-link, .btn-link:active, .btn-link.active, .btn-link[disabled],
-  fieldset[disabled] .btn-link {
+  .btn-link, .btn-link-done, .btn-link:active, .btn-link-done:active, .btn-link.active, .active.btn-link-done, .btn-link[disabled], [disabled].btn-link-done,
+  fieldset[disabled] .btn-link,
+  fieldset[disabled] .btn-link-done {
     background-color: transparent;
     -webkit-box-shadow: none;
     box-shadow: none; }
-  .btn-link, .btn-link:hover, .btn-link:focus, .btn-link:active {
+  .btn-link, .btn-link-done, .btn-link:hover, .btn-link-done:hover, .btn-link:focus, .btn-link-done:focus, .btn-link:active, .btn-link-done:active {
     border-color: transparent; }
-  .btn-link:hover, .btn-link:focus {
+  .btn-link:hover, .btn-link-done:hover, .btn-link:focus, .btn-link-done:focus {
     color: #176b93;
     text-decoration: underline;
     background-color: transparent; }
-  .btn-link[disabled]:hover, .btn-link[disabled]:focus,
+  .btn-link[disabled]:hover, [disabled].btn-link-done:hover, .btn-link[disabled]:focus, [disabled].btn-link-done:focus,
   fieldset[disabled] .btn-link:hover,
-  fieldset[disabled] .btn-link:focus {
+  fieldset[disabled] .btn-link-done:hover,
+  fieldset[disabled] .btn-link:focus,
+  fieldset[disabled] .btn-link-done:focus {
     color: #777777;
     text-decoration: none; }
 
@@ -5721,7 +5873,7 @@ tbody.collapse.in {
 .btn-group.open .dropdown-toggle {
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
-  .btn-group.open .dropdown-toggle.btn-link {
+  .btn-group.open .dropdown-toggle.btn-link, .btn-group.open .dropdown-toggle.btn-link-done {
     -webkit-box-shadow: none;
     box-shadow: none; }
 
@@ -6360,13 +6512,15 @@ tbody.collapse.in {
     color: #777; }
     .navbar-default .navbar-link:hover {
       color: #333; }
-  .navbar-default .btn-link {
+  .navbar-default .btn-link, .navbar-default .btn-link-done {
     color: #777; }
-    .navbar-default .btn-link:hover, .navbar-default .btn-link:focus {
+    .navbar-default .btn-link:hover, .navbar-default .btn-link-done:hover, .navbar-default .btn-link:focus, .navbar-default .btn-link-done:focus {
       color: #333; }
-    .navbar-default .btn-link[disabled]:hover, .navbar-default .btn-link[disabled]:focus,
+    .navbar-default .btn-link[disabled]:hover, .navbar-default [disabled].btn-link-done:hover, .navbar-default .btn-link[disabled]:focus, .navbar-default [disabled].btn-link-done:focus,
     fieldset[disabled] .navbar-default .btn-link:hover,
-    fieldset[disabled] .navbar-default .btn-link:focus {
+    fieldset[disabled] .navbar-default .btn-link-done:hover,
+    fieldset[disabled] .navbar-default .btn-link:focus,
+    fieldset[disabled] .navbar-default .btn-link-done:focus {
       color: #ccc; }
 
 .navbar-inverse {
@@ -6422,13 +6576,15 @@ tbody.collapse.in {
     color: #9d9d9d; }
     .navbar-inverse .navbar-link:hover {
       color: #fff; }
-  .navbar-inverse .btn-link {
+  .navbar-inverse .btn-link, .navbar-inverse .btn-link-done {
     color: #9d9d9d; }
-    .navbar-inverse .btn-link:hover, .navbar-inverse .btn-link:focus {
+    .navbar-inverse .btn-link:hover, .navbar-inverse .btn-link-done:hover, .navbar-inverse .btn-link:focus, .navbar-inverse .btn-link-done:focus {
       color: #fff; }
-    .navbar-inverse .btn-link[disabled]:hover, .navbar-inverse .btn-link[disabled]:focus,
+    .navbar-inverse .btn-link[disabled]:hover, .navbar-inverse [disabled].btn-link-done:hover, .navbar-inverse .btn-link[disabled]:focus, .navbar-inverse [disabled].btn-link-done:focus,
     fieldset[disabled] .navbar-inverse .btn-link:hover,
-    fieldset[disabled] .navbar-inverse .btn-link:focus {
+    fieldset[disabled] .navbar-inverse .btn-link-done:hover,
+    fieldset[disabled] .navbar-inverse .btn-link:focus,
+    fieldset[disabled] .navbar-inverse .btn-link-done:focus {
       color: #444; }
 
 .breadcrumb {
@@ -7397,8 +7553,8 @@ button.list-group-item-danger {
   min-height: 20px;
   padding: 19px;
   margin-bottom: 20px;
-  background-color: #fcfcfc;
-  border: 1px solid #efefef;
+  background-color: #f5f5f5;
+  border: 1px solid #e8e8e8;
   border-radius: 2px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05); }
@@ -8214,15 +8370,15 @@ body {
   vertical-align: middle !important; }
 
 /*!
- *  Font Awesome 4.6.1 by @davegandy - http://fontawesome.io - @fontawesome
+ *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 /* FONT PATH
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.eot?v=4.6.1");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.6.1") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.6.1") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.6.1") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.6.1") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.6.1#fontawesomeregular") format("svg");
+  src: url("../fonts/fontawesome-webfont.eot?v=4.6.3");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.6.3") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.6.3") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.6.3") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.6.3") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -9591,7 +9747,7 @@ body {
 .fa-digg:before {
   content: ""; }
 
-.fa-pied-piper:before {
+.fa-pied-piper-pp:before {
   content: ""; }
 
 .fa-pied-piper-alt:before {
@@ -9717,6 +9873,7 @@ body {
   content: ""; }
 
 .fa-ra:before,
+.fa-resistance:before,
 .fa-rebel:before {
   content: ""; }
 
@@ -10364,6 +10521,26 @@ body {
 
 .fa-snapchat-square:before {
   content: ""; }
+
+.fa-pied-piper:before {
+  content: ""; }
+
+.fa-first-order:before {
+  content: ""; }
+
+.fa-yoast:before {
+  content: ""; }
+
+.fa-themeisle:before {
+  content: ""; }
+
+.fa-google-plus-circle:before,
+.fa-google-plus-official:before {
+  content: ""; }
+
+.fa-fa:before,
+.fa-font-awesome:before {
+  content: ""; }
 
 .sr-only {
   position: absolute;

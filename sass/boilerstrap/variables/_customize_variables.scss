@@ -5,6 +5,7 @@ $gray-darker: lighten($gray-base, 13.5%) !default; // #222
 $gray-dark: lighten($gray-base, 20%) !default; // #333
 $gray: lighten($gray-base, 33.5%) !default; // #555
 $gray-light: lighten($gray-base, 46.7%) !default; // #777
+$gray-small-lighter: lighten($gray-base, 70.1%) !default; // #eee
 $gray-lighter: lighten($gray-base, 93.5%) !default; // #eee
 
 $brand-primary: darken(#38A9E0, 6.5%) !default;
@@ -23,5 +24,9 @@ $font-family-serif: Avenir, "Open Sans", "Helvetica Neue", Helvetica, Arial, Ver
 $font-family-base: $font-family-serif !default;
 $line-height-base: 1.4142 !default;
 
-$well-bg: #fcfcfc;
+$well-bg: #f5f5f5;
 $well-border: darken($well-bg, 5%) !default;
+$well-bg-dark: darken($well-bg, 5%);
+$well-border-dark: darken($well-bg-dark, 5%) !default;
+$well-bg-light: lighten($well-bg, 5%);
+$well-border-light: darken($well-bg-light, 5%) !default;

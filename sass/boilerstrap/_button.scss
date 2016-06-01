@@ -1,0 +1,9 @@
+$text-done: #FF807C;
+.btn-secondary {
+  @include button-variant-invert($brand-primary);
+}
+
+.btn-link-done{
+  @extend .btn-link;
+  color: $text-done!important;
+}

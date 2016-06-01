@@ -1,0 +1,238 @@
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div class="">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="form-group">
+                        <label for="name">氏名</label>
+                        <input id="name" name="name" type="text" class="form-control" placeholder="氏名">
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="form-group">
+                        <label for="email">メールアドレス</label>
+                        <input id="email" name="email" type="text" class="form-control" placeholder="メールアドレス">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>性別</label>
+                <div>
+                    <label for="sex1" class="radio-inline">
+                        <input id="sex1" name="sex" type="radio"> 男
+                    </label>
+                    <label for="sex2" class="radio-inline">
+                        <input id="sex2" name="sex" type="radio"> 女
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-3">
+                    <div class="form-group">
+                        <label for="zip">郵便番号</label>
+                        <input id="zip" name="zip" type="text" class="form-control" placeholder="郵便番号">
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2">
+                    <div class="form-group">
+                        <label for="prefecture">都道府県</label>
+                        <select id="prefecture" name="prefecture" class="form-control">
+                            <option>東京都</option>
+                            <option>大阪府</option>
+                            <option>神奈川県</option>
+                            <option>愛知県</option>
+                            <option>福岡県</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="form-group">
+                        <label for="address">住所</label>
+                        <input id="address" name="address" type="text" class="form-control" placeholder="住所">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>状態</label>
+                <div>
+                    <label for="status1" class="checkbox-inline">
+                        <input id="status1" name="status" type="checkbox"> success
+                    </label>
+                    <label for="status2" class="checkbox-inline">
+                        <input id="status2" name="status" type="checkbox"> danger
+                    </label>
+                    <label for="status3" class="checkbox-inline">
+                        <input id="status3" name="status" type="checkbox"> warning
+                    </label>
+                    <label for="status4" class="checkbox-inline">
+                        <input id="status4" name="status" type="checkbox"> active
+                    </label>
+                    <label for="status5" class="checkbox-inline">
+                        <input id="status5" name="status" type="checkbox"> info
+                    </label>
+                    <label for="status6" class="checkbox-inline">
+                        <input id="status6" name="status" type="checkbox"> none
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="btn btn-primary pull-right">検索</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="form-inline">
+            <div class="form-group">
+                <label>チェック対象に</label>
+                <select class="form-control">
+                    <option>選択肢</option>
+                    <option>選択肢</option>
+                    <option>選択肢</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <div>
+                    <button class="btn btn-primary">操作</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-inline pull-right">
+            <div class="form-group">
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        結果をダウンロード
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">CSVでダウンロード</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">PDFでダウンロード</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary pull-right">新規作成</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="table-responsive">
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th></th>
+            <th>No</th>
+            <th>氏名</th>
+            <th>郵便番号</th>
+            <th>住所</th>
+            <th>電話番号</th>
+            <th>状態</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="success">
+            <td><input type="checkbox" name="list_check"></td>
+            <td>1</td>
+            <td>山田 太郎</td>
+            <td>500-0001</td>
+            <td>東京都江東区3-5-2</td>
+            <td>090-1111-2222</td>
+            <td>success</td>
+            <td class="text-right">
+                <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span></button>
+                <button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-pencil"></span></button>
+            </td>
+        </tr>
+        <tr class="danger">
+            <td><input type="checkbox" name="list_check"></td>
+            <td>2</td>
+            <td>山田 太郎</td>
+            <td>500-0001</td>
+            <td>東京都江東区3-5-2</td>
+            <td>090-1111-2222</td>
+            <td>success</td>
+            <td class="text-right">
+                <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span></button>
+                <button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-pencil"></span></button>
+            </td>
+        </tr>
+        <tr class="warning">
+            <td><input type="checkbox" name="list_check"></td>
+            <td>3</td>
+            <td>山田 太郎</td>
+            <td>500-0001</td>
+            <td>東京都江東区3-5-2</td>
+            <td>090-1111-2222</td>
+            <td>warning</td>
+            <td class="text-right">
+                <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span></button>
+                <button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-pencil"></span></button>
+            </td>
+        </tr>
+        <tr class="active">
+            <td><input type="checkbox" name="list_check"></td>
+            <td>4</td>
+            <td>山田 太郎</td>
+            <td>500-0001</td>
+            <td>東京都江東区3-5-2</td>
+            <td>090-1111-2222</td>
+            <td>active</td>
+            <td class="text-right">
+                <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span></button>
+                <button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-pencil"></span></button>
+            </td>
+        </tr>
+        <tr class="info">
+            <td><input type="checkbox" name="list_check"></td>
+            <td>5</td>
+            <td>山田 太郎</td>
+            <td>500-0001</td>
+            <td>東京都江東区3-5-2</td>
+            <td>090-1111-2222</td>
+            <td>info</td>
+            <td class="text-right">
+                <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span></button>
+                <button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-pencil"></span></button>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="list_check"></td>
+            <td>6</td>
+            <td>山田 太郎</td>
+            <td>500-0001</td>
+            <td>東京都江東区3-5-2</td>
+            <td>090-1111-2222</td>
+            <td></td>
+            <td class="text-right">
+                <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span></button>
+                <button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-pencil"></span></button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <p><strong>6件</strong> 1ページ目</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12 text-center">
+        <ul class="pagination pagination-sm">
+            <li><a href="#">前へ</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">次へ</a></li>
+        </ul>
+    </div>
+</div>
