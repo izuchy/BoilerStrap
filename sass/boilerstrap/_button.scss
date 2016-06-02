@@ -3,6 +3,11 @@ $text-done: #FF807C;
   @include button-variant-invert($brand-primary);
 }
 
+.btn-secondary.btn-danger {
+  @include button-variant-invert($brand-danger);
+}
+
+
 .btn-link-done{
   @extend .btn-link;
   color: $text-done!important;
