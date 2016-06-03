@@ -3,20 +3,22 @@
 }
 
 //side menu
-$global-side-menu-bg: #525252;
-$global-side-menu-item-bg: lighten($global-side-menu-bg, 8%);
-$global-side-menu-item-child-bg:  lighten($global-side-menu-bg, 16%);
-$global-side-menu-item-icon-bg: lighten($global-side-menu-bg, 60%);
-$global-side-menu-item-color: $global-side-menu-bg;
-$global-side-menu-item-link-color: #fff;
+$global-side-menu-bg: #F5F5F5;
+$global-side-menu-item-bg: $global-side-menu-bg;
+$global-side-menu-item-child-bg:  $global-side-menu-bg;
+$global-side-menu-item-icon-bg: #000;
+$global-side-menu-item-color: #000;
+$global-side-menu-item-selected-color: $global-side-menu-bg;
+$global-side-menu-item-link-color: #333;
+$global-side-menu-item-selected-background-color: #E3E3E3;
 $global-side-menu-item-selected-border-color: lighten($brand-primary, 20%);
 $global-side-menu-width: 220px;
-$global-side-menu-item-border-radius: $border-radius-base !default;
-$global-side-menu-item-height: 24px;
+$global-side-menu-item-border-radius: 6px;
+$global-side-menu-item-height: 34px;
 $global-side-menu-item-padding: 4px;
 $global-side-menu-item-icon-padding: 2px;
-$global-side-menu-item-min-icon-size: 22px;
-$global-side-menu-item-margin: 16px;
+$global-side-menu-item-min-icon-size: 28px;
+$global-side-menu-item-margin: 0;
 $global-side-menu-item-margin-bottom: -1px;
 $global-side-menu-item-child-margin-left: 12px;
 
@@ -52,8 +54,8 @@ $global-side-menu-item-child-margin-left: 12px;
     width: 100%;
     list-style-type: none;
     >.side-menu-item{
-      margin-top: 4px!important;
-      border-top: 1px solid lighten($global-side-menu-item-bg,10%)!important;
+      //margin-top: 4px!important;
+      //border-top: 1px solid lighten($global-side-menu-item-bg,10%)!important;
     }
     .side-menu-item {
       padding: $global-side-menu-item-padding;
@@ -62,9 +64,8 @@ $global-side-menu-item-child-margin-left: 12px;
       vertical-align: middle;
       display: table;
       width: 100%;
-      margin-bottom: $global-side-menu-item-margin-bottom;
-      border-top: 1px solid lighten($global-side-menu-item-bg,5%);
-      border-radius: $global-side-menu-item-border-radius;
+      //margin-bottom: $global-side-menu-item-margin-bottom;
+      //border-top: 1px solid lighten($global-side-menu-item-bg,5%);
       cursor: pointer;
       a {
         display: table-cell;
@@ -73,15 +74,16 @@ $global-side-menu-item-child-margin-left: 12px;
         vertical-align: middle;
         text-decoration: none;
         font-size: 14px;
-        line-height: $global-side-menu-item-height;
         color: $global-side-menu-item-link-color;
       }
-      border-left: 4px solid $global-side-menu-item-bg;
+      //border-left: 4px solid $global-side-menu-item-bg;
       &.selected{
-        border-left: 4px solid $global-side-menu-item-selected-border-color!important;
+        background-color: $global-side-menu-item-selected-background-color;
+        //border-left: 4px solid $global-side-menu-item-selected-border-color!important;
       }
       &:hover {
-        border-left: 4px solid $global-side-menu-item-link-color;
+        background-color: $global-side-menu-item-selected-background-color;
+        //border-left: 4px solid $global-side-menu-item-link-color;
       }
       .badge {
         float: right;
@@ -89,18 +91,36 @@ $global-side-menu-item-child-margin-left: 12px;
         vertical-align: middle;
       }
       .item-icon {
-        font-size: 16px;
-        background-color: $global-side-menu-item-icon-bg;
+        font-size: 20px;
         color: $global-side-menu-item-color;
         border-radius: $global-side-menu-item-border-radius;
         min-width: $global-side-menu-item-min-icon-size;
         min-height: $global-side-menu-item-min-icon-size;
         width: auto;
         height: auto;
-        margin-left: $global-side-menu-item-icon-padding;
-        padding: $global-side-menu-item-icon-padding * 2 - 1px;
+        margin-left: 20px;
+        padding: 3px 6px;
         text-align: center;
         margin-right: 8px;
+      }
+      &.selected .item-icon{
+        background-color: $global-side-menu-item-icon-bg;
+        color: $global-side-menu-item-selected-color;
+      }
+      &.selected .item-icon.green{
+        background-color: #8DC557;
+      }
+      &.selected .item-icon.pink{
+        background-color: #EC6E8F;
+      }
+      &.selected .item-icon.yellow{
+        background-color: #E8BC39;
+      }
+      &.selected .item-icon.purple{
+        background-color: #A788BE;
+      }
+      &.selected .item-icon.blue{
+        background-color: #30A8E1;
       }
       .no-item-icon{
         padding-left: $global-side-menu-item-height;
@@ -117,9 +137,10 @@ $global-side-menu-item-child-margin-left: 12px;
 
     .collapsing .side-menu-item ,.collapse .side-menu-item {
       background-color: $global-side-menu-item-child-bg;
-      border-left: 4px solid $global-side-menu-item-child-bg;
+      //border-left: 4px solid $global-side-menu-item-child-bg;
       &:hover {
-        border-left: 4px solid $global-side-menu-item-link-color;
+        background-color: $global-side-menu-item-selected-background-color;
+        //border-left: 4px solid $global-side-menu-item-link-color;
       }
     }
 

@@ -5,7 +5,7 @@
 .global-side-menu {
   position: fixed;
   overflow: scroll;
-  background-color: #525252;
+  background-color: #F5F5F5;
   width: 220px;
   min-height: 100%;
   height: 100%;
@@ -22,72 +22,75 @@
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out; }
   .global-side-menu .logo img {
-    margin: 16px 0 0 16px; }
+    margin: 0 0 0 0; }
   .global-side-menu .logo h1.logo, .global-side-menu .logo h2.logo {
-    padding-left: 16px;
+    padding-left: 0;
     color: #fff;
     margin-bottom: 0; }
   .global-side-menu .side-menu-list {
-    padding: 16px;
+    padding: 0;
     width: 100%;
     list-style-type: none; }
-    .global-side-menu .side-menu-list > .side-menu-item {
-      margin-top: 4px !important;
-      border-top: 1px solid gray !important; }
     .global-side-menu .side-menu-list .side-menu-item {
       padding: 4px;
-      background-color: #666666;
-      height: 24px;
+      background-color: #F5F5F5;
+      height: 34px;
       vertical-align: middle;
       display: table;
       width: 100%;
-      margin-bottom: -1px;
-      border-top: 1px solid #737373;
-      border-radius: 2px;
-      cursor: pointer;
-      border-left: 4px solid #666666; }
+      cursor: pointer; }
       .global-side-menu .side-menu-list .side-menu-item a {
         display: table-cell;
-        height: 24px;
+        height: 34px;
         width: inherit;
         vertical-align: middle;
         text-decoration: none;
         font-size: 14px;
-        line-height: 24px;
-        color: #fff; }
+        color: #333; }
       .global-side-menu .side-menu-list .side-menu-item.selected {
-        border-left: 4px solid #74c3e9 !important; }
+        background-color: #E3E3E3; }
       .global-side-menu .side-menu-list .side-menu-item:hover {
-        border-left: 4px solid #fff; }
+        background-color: #E3E3E3; }
       .global-side-menu .side-menu-list .side-menu-item .badge {
         float: right;
         display: table-cell;
         vertical-align: middle; }
       .global-side-menu .side-menu-list .side-menu-item .item-icon {
-        font-size: 16px;
-        background-color: #ebebeb;
-        color: #525252;
-        border-radius: 2px;
-        min-width: 22px;
-        min-height: 22px;
+        font-size: 20px;
+        color: #000;
+        border-radius: 6px;
+        min-width: 28px;
+        min-height: 28px;
         width: auto;
         height: auto;
-        margin-left: 2px;
-        padding: 3px;
+        margin-left: 20px;
+        padding: 3px 6px;
         text-align: center;
         margin-right: 8px; }
+      .global-side-menu .side-menu-list .side-menu-item.selected .item-icon {
+        background-color: #000;
+        color: #F5F5F5; }
+      .global-side-menu .side-menu-list .side-menu-item.selected .item-icon.green {
+        background-color: #8DC557; }
+      .global-side-menu .side-menu-list .side-menu-item.selected .item-icon.pink {
+        background-color: #EC6E8F; }
+      .global-side-menu .side-menu-list .side-menu-item.selected .item-icon.yellow {
+        background-color: #E8BC39; }
+      .global-side-menu .side-menu-list .side-menu-item.selected .item-icon.purple {
+        background-color: #A788BE; }
+      .global-side-menu .side-menu-list .side-menu-item.selected .item-icon.blue {
+        background-color: #30A8E1; }
       .global-side-menu .side-menu-list .side-menu-item .no-item-icon {
-        padding-left: 24px;
+        padding-left: 34px;
         margin-right: 12px; }
       .global-side-menu .side-menu-list .side-menu-item[aria-expanded=true] {
-        background-color: #7b7b7b !important; }
+        background-color: #F5F5F5 !important; }
     .global-side-menu .side-menu-list .collapsing, .global-side-menu .side-menu-list .collapse {
       margin-left: 12px; }
     .global-side-menu .side-menu-list .collapsing .side-menu-item, .global-side-menu .side-menu-list .collapse .side-menu-item {
-      background-color: #7b7b7b;
-      border-left: 4px solid #7b7b7b; }
+      background-color: #F5F5F5; }
       .global-side-menu .side-menu-list .collapsing .side-menu-item:hover, .global-side-menu .side-menu-list .collapse .side-menu-item:hover {
-        border-left: 4px solid #fff; }
+        background-color: #E3E3E3; }
 
 .global-top-menu {
   position: fixed;
