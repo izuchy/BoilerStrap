@@ -21,8 +21,6 @@
     -webkit-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out; }
-  .global-side-menu .logo img {
-    margin: 0 0 0 0; }
   .global-side-menu .logo h1.logo, .global-side-menu .logo h2.logo {
     padding-left: 0;
     color: #fff;
@@ -48,7 +46,7 @@
         font-size: 14px;
         color: #333; }
       .global-side-menu .side-menu-list .side-menu-item.selected {
-        background-color: #E3E3E3; }
+        background-color: #E3E3E3 !important; }
       .global-side-menu .side-menu-list .side-menu-item:hover {
         background-color: #E3E3E3; }
       .global-side-menu .side-menu-list .side-menu-item .badge {
@@ -81,6 +79,7 @@
       .global-side-menu .side-menu-list .side-menu-item.selected .item-icon.blue {
         background-color: #30A8E1; }
       .global-side-menu .side-menu-list .side-menu-item .no-item-icon {
+        margin-left: 20px;
         margin-right: 29px; }
       .global-side-menu .side-menu-list .side-menu-item[aria-expanded=true] {
         background-color: #F5F5F5 !important; }

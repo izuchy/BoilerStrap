@@ -40,9 +40,6 @@ $global-side-menu-item-child-margin-left: 12px;
 
   @include transition(all 0.2s ease-in-out);
   .logo {
-    img {
-      margin: $global-side-menu-item-margin 0 0 $global-side-menu-item-margin;
-    }
     h1.logo,h2.logo{
       padding-left: $global-side-menu-item-margin;
       color: #fff;
@@ -53,10 +50,6 @@ $global-side-menu-item-child-margin-left: 12px;
     padding: $global-side-menu-item-margin;
     width: 100%;
     list-style-type: none;
-    >.side-menu-item{
-      //margin-top: 4px!important;
-      //border-top: 1px solid lighten($global-side-menu-item-bg,10%)!important;
-    }
     .side-menu-item {
       padding: $global-side-menu-item-padding;
       background-color: $global-side-menu-item-bg;
@@ -64,8 +57,6 @@ $global-side-menu-item-child-margin-left: 12px;
       vertical-align: middle;
       display: table;
       width: 100%;
-      //margin-bottom: $global-side-menu-item-margin-bottom;
-      //border-top: 1px solid lighten($global-side-menu-item-bg,5%);
       cursor: pointer;
       a {
         display: table-cell;
@@ -76,14 +67,11 @@ $global-side-menu-item-child-margin-left: 12px;
         font-size: 14px;
         color: $global-side-menu-item-link-color;
       }
-      //border-left: 4px solid $global-side-menu-item-bg;
       &.selected{
-        background-color: $global-side-menu-item-selected-background-color;
-        //border-left: 4px solid $global-side-menu-item-selected-border-color!important;
+        background-color: $global-side-menu-item-selected-background-color!important;
       }
       &:hover {
         background-color: $global-side-menu-item-selected-background-color;
-        //border-left: 4px solid $global-side-menu-item-link-color;
       }
       .badge {
         float: right;
@@ -123,6 +111,7 @@ $global-side-menu-item-child-margin-left: 12px;
         background-color: #30A8E1;
       }
       .no-item-icon{
+        margin-left: 20px;
         margin-right: 29px;
       }
       &[aria-expanded=true]{
@@ -136,10 +125,8 @@ $global-side-menu-item-child-margin-left: 12px;
 
     .collapsing .side-menu-item ,.collapse .side-menu-item {
       background-color: $global-side-menu-item-child-bg;
-      //border-left: 4px solid $global-side-menu-item-child-bg;
       &:hover {
         background-color: $global-side-menu-item-selected-background-color;
-        //border-left: 4px solid $global-side-menu-item-link-color;
       }
     }
 
