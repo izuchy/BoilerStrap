@@ -138,11 +138,11 @@
           background: none;
           border: none;
           border-bottom: 4px solid #F0F0F0; }
-        .main-content .main-top-content .nav-tabs > li a.active {
+        .main-content .main-top-content .nav-tabs > li a.selected {
           background: none;
           border: none;
           border-bottom: 4px solid #F0F0F0; }
-      .main-content .main-top-content .nav-tabs > li.active a {
+      .main-content .main-top-content .nav-tabs > li.selected a {
         border-bottom: 4px solid #219bd6; }
   .main-content .main-body-content {
     padding: 16px; }

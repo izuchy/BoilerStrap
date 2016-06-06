@@ -200,13 +200,13 @@ $main-top-content-nav-item-border: $brand-primary;
             border: none;
             border-bottom: 4px solid $main-top-content-bg;
           }
-          &.active{
+          &.selected{
             background: none;
             border: none;
             border-bottom: 4px solid $main-top-content-bg;
           }
         }
-        &.active a{
+        &.selected a{
           border-bottom: 4px solid $main-top-content-nav-item-border;
         }
       }
