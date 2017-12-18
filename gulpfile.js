@@ -48,6 +48,6 @@ gulp.task('php2html',function(){
 });
 
 gulp.task('init', function() {
-    gulp.src('bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js')
+    gulp.src('node_modules/bootstrap/dist/js/bootstrap.js')
         .pipe(gulp.dest('styleguide/js'));
 } );

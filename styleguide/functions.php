@@ -17,13 +17,13 @@
             $files[] = $file;
         endif;
     endwhile;
-echo '<li role="presentation" class="divider"></li><li role="presentation" class="dropdown-header">'.$type.'</li>';
+echo '<li class="dropdown-item">'.$type.'</li>';
     sort($files);
     foreach ($files as $file):
         $filename = preg_replace("/\.html$/i", "", $file);
         $title = preg_replace("/\-/i", " ", $filename);
         $title = ucwords($title);
-        echo '<li><a href="#sg-'.$filename.'">'.$title.'</a></li>';
+        echo '<a class="dropdown-item" href="#sg-'.$filename.'">'.$title.'</a>';
     endforeach;
   }
   // Display title of each markup samples as a select option
@@ -41,7 +41,7 @@ echo '<li role="presentation" class="divider"></li><li role="presentation" class
         $filename = preg_replace("/\.html$/i", "", $file);
         $title = preg_replace("/\-/i", " ", $filename);
         $title = ucwords($title);
-        echo '<li><a href="#sg-'.$filename.'">'.$title.'</a></li>';
+        echo '<a class="dropdown-item" href="#sg-'.$filename.'">'.$title.'</a>';
     endforeach;
   }
     // Display foundation elements
@@ -118,9 +118,9 @@ echo '<li role="presentation" class="divider"></li><li role="presentation" class
         //  echo '</div></div></div>';
         //}
         echo '</div><!--/.sg-display-->';
-        echo '<div class="sg-markup-controls"><button class="btn sg-btn sg-btn--source" href="#">View Source</button> <a class="sg-btn--top" href="#top">Back to Top</a> </div>';
+        echo '<div class="sg-markup-controls"><button class="btn btn-primary btn-sm sg-btn sg-btn--source" href="#">ソースを見る</button> <a class="sg-btn--top" href="#top">トップに戻る</a> </div>';
         echo '<div class="sg-source sg-animated">';
-        echo '<button class="btn btn-default sg-btn sg-btn--select" href="#" data-clipboard-target="#code'.$code_cnt.'">Copy Source</button>';
+        echo '<button class="btn btn-default sg-btn sg-btn--select" href="#" data-clipboard-target="#code'.$code_cnt.'">コードをコピー</button>';
         echo '<pre class="prettyprint linenums" id="code'.$code_cnt.'"><code>';
         echo htmlspecialchars(file_get_contents('markup/'.$type.'/'.$file));
         echo '</code></pre>';
