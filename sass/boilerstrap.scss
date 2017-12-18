@@ -3,9 +3,6 @@
 @import "boilerstrap/variables/variables";
 @import "boilerstrap/mixins/customize_mixins";
 
-//Bootstrap mixins
-@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
-
 //boilerstrap
 @import "boilerstrap/global_menu";
 @import "boilerstrap/panel";
@@ -14,15 +11,6 @@
 @import "boilerstrap/type";
 @import "boilerstrap/forms";
 
-//font-awesome
-@import "../bower_components/font-awesome/scss/font-awesome.scss";
-
-/*!
- * Bootstrap v3.3.6 (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-
-// Core variables and mixins
-@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+//bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
 @import "boilerstrap/override/common";

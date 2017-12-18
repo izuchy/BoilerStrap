@@ -1,7 +1,0 @@
-$state-done-text: #FF807C !default;
-@include text-emphasis-variant('.text-done', $state-done-text);
-
-.page-header-primary{
-  border-color: $gray-small-lighter!important;
-  border-width: 2px!important;
-}
